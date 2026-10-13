@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/ga4_landing_page_record.json",
+  "title": "GA4 Landing Page Record",
+  "description": "Google Analytics 4 traffic, engagement, and conversion observation.",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "landing_page": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    },
+    "campaign": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "users": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sessions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "engaged_sessions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "engagement_rate": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "conversions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "key_events": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "booking_events": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "whatsapp_events": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "phone_events": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "form_events": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "revenue": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Strictly null if PMS is unintegrated."
+    },
+    "country": {
+      "type": "string"
+    },
+    "device": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "date",
+    "landing_page",
+    "source",
+    "medium",
+    "users",
+    "sessions",
+    "engaged_sessions",
+    "engagement_rate",
+    "conversions",
+    "key_events",
+    "booking_events",
+    "whatsapp_events",
+    "phone_events",
+    "form_events",
+    "country",
+    "device",
+    "retrieved_at"
+  ]
+}

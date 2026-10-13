@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/gsc_query_record.json",
+  "title": "GSC Query Record",
+  "description": "Google Search Console query observation with immutable raw and calculated derived fields.",
+  "type": "object",
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "query": {
+      "type": "string"
+    },
+    "page_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "country": {
+      "type": "string"
+    },
+    "device": {
+      "type": "string"
+    },
+    "search_appearance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "clicks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "impressions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "ctr": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "position": {
+      "type": "number",
+      "minimum": 1.0
+    },
+    "source": {
+      "type": "string",
+      "default": "GSC"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "striking_distance": {
+      "type": "boolean",
+      "description": "Derived: position >= 4.0 and position <= 20.0"
+    },
+    "high_impression_low_ctr": {
+      "type": "boolean",
+      "description": "Derived: impressions >= 50 and ctr <= 0.02"
+    },
+    "ranking_decline": {
+      "type": "boolean"
+    },
+    "traffic_growth": {
+      "type": "boolean"
+    },
+    "new_query": {
+      "type": "boolean"
+    },
+    "cannibalization_signal": {
+      "type": "boolean"
+    },
+    "commercial_opportunity": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "record_id",
+    "date",
+    "query",
+    "page_url",
+    "country",
+    "device",
+    "clicks",
+    "impressions",
+    "ctr",
+    "position",
+    "source",
+    "retrieved_at"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/location.json",
+  "title": "Location",
+  "description": "Geographic entity representing destination, town, valley, or landmark.",
+  "type": "object",
+  "properties": {
+    "location_id": {
+      "type": "string",
+      "description": "Unique location identifier."
+    },
+    "name": {
+      "type": "string",
+      "description": "Geographic name."
+    },
+    "location_type": {
+      "type": "string",
+      "enum": [
+        "COUNTRY",
+        "STATE",
+        "DISTRICT",
+        "CITY",
+        "TOWN",
+        "LOCALITY",
+        "DESTINATION",
+        "ATTRACTION",
+        "LANDMARK",
+        "REGION"
+      ]
+    },
+    "parent_location_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Parent location reference."
+    },
+    "country": {
+      "type": "string",
+      "description": "Country name."
+    },
+    "state": {
+      "type": "string",
+      "description": "State or province."
+    },
+    "district": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "District."
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "City or municipality."
+    },
+    "locality": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Specific locality or village."
+    },
+    "latitude": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Latitude coordinate."
+    },
+    "longitude": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Longitude coordinate."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "last_verified_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "location_id",
+    "name",
+    "location_type",
+    "country",
+    "state",
+    "verified",
+    "source",
+    "last_verified_at"
+  ]
+}

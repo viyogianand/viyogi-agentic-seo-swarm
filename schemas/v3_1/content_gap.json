@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/content_gap.json",
+  "title": "Content Gap",
+  "description": "Identified content, semantic, or entity deficiency on a page.",
+  "type": "object",
+  "properties": {
+    "gap_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "gap_type": {
+      "type": "string",
+      "enum": [
+        "MISSING_TOPIC",
+        "MISSING_QUESTION",
+        "MISSING_ENTITY",
+        "MISSING_FIRST_PARTY_INFORMATION",
+        "MISSING_LOCAL_INFORMATION",
+        "MISSING_INTERNAL_LINK",
+        "MISSING_METADATA",
+        "MISSING_STRUCTURE",
+        "MISSING_FAQ",
+        "MISSING_CONVERSION_PATH",
+        "OUTDATED_INFORMATION",
+        "WEAK_EXPERTISE",
+        "SERP_MISMATCH",
+        "AI_SOURCEABILITY",
+        "OTHER"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "source_records": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competitor_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "business_value": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "seo_value": {
+      "type": "number"
+    },
+    "aeo_value": {
+      "type": "number"
+    },
+    "geo_value": {
+      "type": "number"
+    },
+    "commercial_value": {
+      "type": "number"
+    },
+    "effort": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "IN_PROGRESS",
+        "RESOLVED",
+        "DISMISSED"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "gap_id",
+    "page_id",
+    "gap_type",
+    "description",
+    "evidence",
+    "business_value",
+    "seo_value",
+    "aeo_value",
+    "geo_value",
+    "commercial_value",
+    "effort",
+    "confidence",
+    "priority",
+    "recommended_action",
+    "status"
+  ]
+}

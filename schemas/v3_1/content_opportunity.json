@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/content_opportunity.json",
+  "title": "Content Opportunity",
+  "description": "Ranked, actionable growth opportunity combining query, page, and gap data.",
+  "type": "object",
+  "properties": {
+    "opportunity_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "keyword_id": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "primary_query": {
+      "type": "string"
+    },
+    "secondary_queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_intent": {
+      "type": "string"
+    },
+    "commercial_intent": {
+      "type": "string"
+    },
+    "business_value": {
+      "type": "string",
+      "enum": [
+        "VERY_HIGH",
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "current_rank": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "impressions": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "clicks": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "ctr": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "conversion_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "serp_competition": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "content_gap_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competitor_gap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ai_opportunity": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "local_opportunity": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "estimated_effort": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "estimated_impact": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "forecast_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recommended_action": {
+      "type": "string",
+      "enum": [
+        "OPTIMIZE",
+        "REWRITE",
+        "EXPAND",
+        "CREATE",
+        "CONSOLIDATE",
+        "REDIRECT",
+        "EXPERIMENT",
+        "DO_NOT_PURSUE"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "IDENTIFIED",
+        "APPROVED",
+        "IN_PROGRESS",
+        "IMPLEMENTED",
+        "ARCHIVED"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "opportunity_id",
+    "page_id",
+    "keyword_id",
+    "topic",
+    "primary_query",
+    "business_value",
+    "serp_competition",
+    "ai_opportunity",
+    "local_opportunity",
+    "estimated_effort",
+    "estimated_impact",
+    "confidence",
+    "recommended_action",
+    "priority",
+    "owner",
+    "status",
+    "created_at",
+    "updated_at"
+  ]
+}

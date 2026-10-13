@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/structured_data_record.json",
+  "title": "Structured Data Record",
+  "description": "JSON-LD Schema definition deployed to an entity or route.",
+  "type": "object",
+  "properties": {
+    "schema_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "schema_type": {
+      "type": "string",
+      "enum": [
+        "LodgingBusiness",
+        "HotelRoom",
+        "Resort",
+        "FAQPage",
+        "BreadcrumbList",
+        "Article",
+        "LocalBusiness",
+        "ItemPage",
+        "AboutPage",
+        "ContactPage"
+      ]
+    },
+    "jsonld_content": {
+      "type": "object"
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": [
+        "VALID",
+        "SYNTAX_ERROR",
+        "MISSING_RECOMMENDED_FIELD",
+        "UNVERIFIED"
+      ]
+    },
+    "google_rich_result_eligible": {
+      "type": "boolean"
+    },
+    "last_audited_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "schema_id",
+    "page_id",
+    "schema_type",
+    "jsonld_content",
+    "validation_status",
+    "google_rich_result_eligible",
+    "last_audited_at"
+  ]
+}

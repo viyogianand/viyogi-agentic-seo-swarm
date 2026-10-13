@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/keyword.json",
+  "title": "Keyword",
+  "description": "Target search query, intent classification, volume, and ranking telemetry.",
+  "type": "object",
+  "properties": {
+    "keyword_id": {
+      "type": "string"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "normalized_keyword": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "default": "en"
+    },
+    "country": {
+      "type": "string",
+      "default": "in"
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "device": {
+      "type": "string",
+      "enum": [
+        "DESKTOP",
+        "MOBILE",
+        "TABLET",
+        "ALL"
+      ]
+    },
+    "search_engine": {
+      "type": "string",
+      "enum": [
+        "GOOGLE",
+        "BING",
+        "ALL"
+      ]
+    },
+    "keyword_type": {
+      "type": "string",
+      "enum": [
+        "CORE",
+        "DISCOVERED",
+        "GSC",
+        "COMPETITOR",
+        "PAA",
+        "RELATED",
+        "LONG_TAIL",
+        "BUYER_LANGUAGE",
+        "LOCAL",
+        "SEASONAL",
+        "AI_DISCOVERED",
+        "BRANDED",
+        "NON_BRANDED"
+      ]
+    },
+    "search_intent": {
+      "type": "string",
+      "enum": [
+        "NAVIGATIONAL",
+        "INFORMATIONAL",
+        "COMMERCIAL_INVESTIGATION",
+        "TRANSACTIONAL",
+        "LOCAL",
+        "DESTINATION",
+        "PROPERTY",
+        "EXPERIENCE",
+        "BOOKING"
+      ]
+    },
+    "commercial_intent": {
+      "type": "string",
+      "enum": [
+        "VERY_HIGH",
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "business_relevance": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "NONE"
+      ]
+    },
+    "property_relevance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_volume": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "search_volume_source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cpc": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "competition": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "trend_direction": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "RISING",
+        "STABLE",
+        "DECLINING",
+        "UNKNOWN",
+        null
+      ]
+    },
+    "trend_source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_target_page_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recommended_target_page_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_position": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "best_position": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "impressions": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "clicks": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "ctr": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "conversion_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "ai_relevance": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "opportunity_score": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "last_updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "keyword_id",
+    "keyword",
+    "normalized_keyword",
+    "language",
+    "country",
+    "device",
+    "search_engine",
+    "keyword_type",
+    "search_intent",
+    "commercial_intent",
+    "business_relevance",
+    "ai_relevance",
+    "priority",
+    "last_updated_at"
+  ]
+}

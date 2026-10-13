@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/experience.json",
+  "title": "Experience",
+  "description": "Curated stay, dining, or celebration experience provided by Vivaak / Vaza.",
+  "type": "object",
+  "properties": {
+    "experience_id": {
+      "type": "string"
+    },
+    "property_id": {
+      "type": "string",
+      "description": "Foreign key reference to PROPERTY schema."
+    },
+    "name": {
+      "type": "string"
+    },
+    "experience_type": {
+      "type": "string",
+      "enum": [
+        "FAMILY_STAY",
+        "GROUP_STAY",
+        "BIRTHDAY",
+        "CELEBRATION",
+        "CORPORATE",
+        "EVENT",
+        "DINING",
+        "WEEKEND_GETAWAY",
+        "SEASONAL",
+        "LOCAL_EXPERIENCE",
+        "OTHER"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "seasonality": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "SEASONAL",
+        "ON_REQUEST",
+        "UNAVAILABLE",
+        "UNKNOWN"
+      ]
+    },
+    "booking_required": {
+      "type": "boolean"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "related_queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "landing_page_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "experience_id",
+    "property_id",
+    "name",
+    "experience_type",
+    "description",
+    "availability",
+    "booking_required",
+    "verified",
+    "source"
+  ]
+}

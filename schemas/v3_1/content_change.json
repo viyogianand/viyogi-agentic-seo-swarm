@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/content_change.json",
+  "title": "Content Change",
+  "description": "Atomic, traceable content mutation submitted for Sentinel approval and Mechanic execution.",
+  "type": "object",
+  "properties": {
+    "change_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "content_version_before": {
+      "type": "string"
+    },
+    "content_version_after": {
+      "type": "string"
+    },
+    "change_type": {
+      "type": "string",
+      "enum": [
+        "TITLE",
+        "META",
+        "H1",
+        "H2",
+        "H3",
+        "BODY",
+        "FAQ",
+        "INTERNAL_LINK",
+        "ALT_TEXT",
+        "SCHEMA",
+        "CTA",
+        "STRUCTURE",
+        "FULL_REWRITE",
+        "OTHER"
+      ]
+    },
+    "old_value": {
+      "type": "string"
+    },
+    "new_value": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "keyword_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "expected_impact": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "agent": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "REJECTED",
+        "CHANGES_REQUESTED"
+      ]
+    },
+    "implementation_status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "IN_PROGRESS",
+        "IMPLEMENTED",
+        "ROLLED_BACK"
+      ]
+    },
+    "implemented_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "FAILED",
+        "PENDING"
+      ]
+    },
+    "verification_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "change_id",
+    "page_id",
+    "content_version_before",
+    "content_version_after",
+    "change_type",
+    "old_value",
+    "new_value",
+    "reason",
+    "evidence",
+    "hypothesis",
+    "expected_impact",
+    "agent",
+    "approval_status",
+    "implementation_status",
+    "verification_status"
+  ]
+}

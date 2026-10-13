@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/competitor.json",
+  "title": "Competitor",
+  "description": "Tracked competitor domain, property, or hospitality portal.",
+  "type": "object",
+  "properties": {
+    "competitor_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "competitor_type": {
+      "type": "string",
+      "enum": [
+        "DIRECT_PROPERTY",
+        "LOCAL_HOSPITALITY",
+        "DESTINATION",
+        "TRAVEL_PLATFORM",
+        "OTA",
+        "EDITORIAL",
+        "DIRECTORY",
+        "OTHER"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "market": {
+      "type": "string"
+    },
+    "relevance": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "discovered_by": {
+      "type": "string"
+    },
+    "discovery_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "competitor_id",
+    "domain",
+    "name",
+    "competitor_type",
+    "location",
+    "market",
+    "relevance",
+    "discovered_by",
+    "discovery_date",
+    "active"
+  ]
+}

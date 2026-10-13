@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/claim.json",
+  "title": "Claim",
+  "description": "Brand, property, or amenity assertion requiring Sentinel verification before publication.",
+  "type": "object",
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "claim_text": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "property_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "REJECTED",
+        "UNVERIFIED",
+        "CONDITIONAL"
+      ]
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "verification_source": {
+      "type": "string"
+    },
+    "verified_by": {
+      "type": "string"
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "claim_id",
+    "claim_text",
+    "entity_id",
+    "status",
+    "evidence",
+    "verification_source",
+    "verified_by",
+    "verified_at"
+  ]
+}

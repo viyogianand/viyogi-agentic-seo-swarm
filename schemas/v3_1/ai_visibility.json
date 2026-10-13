@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/ai_visibility_record.json",
+  "title": "AI Visibility Record",
+  "description": "Observation of brand/property presence in generative AI answers and summaries.",
+  "type": "object",
+  "properties": {
+    "visibility_id": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "keyword_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "GOOGLE_AI_OVERVIEW",
+        "GOOGLE_AI_MODE",
+        "CHATGPT",
+        "PERPLEXITY",
+        "COPILOT",
+        "GEMINI",
+        "OTHER"
+      ]
+    },
+    "country": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "device": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "mentioned": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Strictly null if not directly measurable."
+    },
+    "cited": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Strictly null if not directly measurable."
+    },
+    "citation_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "citation_title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "competitors_mentioned": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competitor_citations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "answer_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observation_method": {
+      "type": "string",
+      "enum": [
+        "DIRECT",
+        "API",
+        "MANUAL",
+        "THIRD_PARTY",
+        "NOT_MEASURABLE"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "visibility_id",
+    "query",
+    "platform",
+    "country",
+    "location",
+    "language",
+    "device",
+    "date",
+    "observation_method",
+    "confidence"
+  ]
+}

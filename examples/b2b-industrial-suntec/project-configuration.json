@@ -1,0 +1,32 @@
+{
+  "project_id": "suntec-enterprises-reference",
+  "project_name": "Suntec Enterprises Growth System",
+  "domain": "https://suntecenterprises.com",
+  "business_type": "B2B_MANUFACTURING",
+  "target_markets": [
+    {"country": "IN", "language": "en", "priority": "P0"},
+    {"country": "DE", "language": "en", "priority": "P1"},
+    {"country": "US", "language": "en", "priority": "P1"}
+  ],
+  "storage_adapter": "CLOUDFLARE_D1",
+  "governance": {
+    "level_b_approval_required": true,
+    "level_c_approval_required": true,
+    "approval_queue_file": "APPROVAL_QUEUE.md"
+  },
+  "concurrency_limits": {
+    "pool_a_max_workers": 5,
+    "pool_b_max_workers": 1,
+    "pool_c_max_workers": 1
+  },
+  "connected_services": {
+    "dataforseo_enabled": true,
+    "gsc_enabled": true,
+    "ga4_enabled": true,
+    "bing_webmaster_enabled": true,
+    "indexnow_enabled": true,
+    "google_indexing_api_enabled": true,
+    "google_business_profile_enabled": true,
+    "firecrawl_enabled": true
+  }
+}

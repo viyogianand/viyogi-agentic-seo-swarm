@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/next_best_action.json",
+  "title": "Next Best Action",
+  "description": "Highest priority next action decided by Conductor (#1) for immediate execution.",
+  "type": "object",
+  "properties": {
+    "action_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "action": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "keyword_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "opportunity_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "expected_impact": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "effort": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owner": {
+      "type": "string"
+    },
+    "approval_required": {
+      "type": "string",
+      "enum": [
+        "LEVEL_A",
+        "LEVEL_B",
+        "LEVEL_C"
+      ]
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "APPROVED",
+        "IN_PROGRESS",
+        "COMPLETED",
+        "ABORTED"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "action_id",
+    "date",
+    "action",
+    "page_id",
+    "reason",
+    "evidence",
+    "expected_impact",
+    "effort",
+    "confidence",
+    "owner",
+    "approval_required",
+    "deadline",
+    "status"
+  ]
+}

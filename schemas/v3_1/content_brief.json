@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/content_brief.json",
+  "title": "Content Brief",
+  "description": "Detailed editorial specification issued by Editor (#20) for Scribe and Tuner.",
+  "type": "object",
+  "properties": {
+    "brief_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "opportunity_id": {
+      "type": "string"
+    },
+    "primary_keyword": {
+      "type": "string"
+    },
+    "secondary_keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_intent": {
+      "type": "string"
+    },
+    "commercial_intent": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "page_role": {
+      "type": "string"
+    },
+    "recommended_title": {
+      "type": "string"
+    },
+    "recommended_meta": {
+      "type": "string"
+    },
+    "recommended_h1": {
+      "type": "string"
+    },
+    "recommended_h2s": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_h3s": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "paa_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entities_to_cover": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "first_party_information": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "internal_links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "external_sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "cta_strategy": {
+      "type": "string"
+    },
+    "schema_strategy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ai_sourceability_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "brand_voice": {
+      "type": "string"
+    },
+    "content_constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "success_metrics": {
+      "type": "object"
+    },
+    "approval_required": {
+      "type": "string",
+      "enum": [
+        "LEVEL_A",
+        "LEVEL_B",
+        "LEVEL_C"
+      ]
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "brief_id",
+    "page_id",
+    "opportunity_id",
+    "primary_keyword",
+    "search_intent",
+    "commercial_intent",
+    "audience",
+    "page_role",
+    "recommended_title",
+    "recommended_meta",
+    "recommended_h1",
+    "recommended_h2s",
+    "cta_strategy",
+    "brand_voice",
+    "success_metrics",
+    "approval_required",
+    "created_by",
+    "created_at"
+  ]
+}

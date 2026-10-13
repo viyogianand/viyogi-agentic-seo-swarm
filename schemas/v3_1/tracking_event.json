@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/tracking_event.json",
+  "title": "Tracking Event",
+  "description": "Google Tag Manager event definition and conversion telemetry.",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "BOOKING",
+        "WHATSAPP",
+        "PHONE",
+        "EMAIL",
+        "FORM",
+        "CTA",
+        "DIRECTIONS",
+        "OUTBOUND",
+        "OTHER"
+      ]
+    },
+    "page_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "element": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "event_category": {
+      "type": "string"
+    },
+    "event_action": {
+      "type": "string"
+    },
+    "event_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conversion": {
+      "type": "boolean"
+    },
+    "ga4_event_name": {
+      "type": "string"
+    },
+    "gtm_container": {
+      "type": "string"
+    },
+    "implementation_status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "DRAFT",
+        "TESTING",
+        "INACTIVE"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "UNVERIFIED"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "event_id",
+    "event_name",
+    "event_type",
+    "page_url",
+    "event_category",
+    "event_action",
+    "conversion",
+    "ga4_event_name",
+    "gtm_container",
+    "implementation_status",
+    "verification_status"
+  ]
+}

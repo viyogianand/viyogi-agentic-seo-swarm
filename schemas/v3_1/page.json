@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/page.json",
+  "title": "Page",
+  "description": "Individual page route within the Vivaak / Vaza web architecture.",
+  "type": "object",
+  "properties": {
+    "page_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "route": {
+      "type": "string"
+    },
+    "page_type": {
+      "type": "string",
+      "enum": [
+        "HOME",
+        "PROPERTY",
+        "LOCATION",
+        "AMENITY",
+        "EXPERIENCE",
+        "EVENT",
+        "DESTINATION",
+        "LOCAL_GUIDE",
+        "FOOD",
+        "FAQ",
+        "JOURNAL",
+        "BLOG",
+        "COMMERCIAL",
+        "REFERENCE",
+        "LEGAL",
+        "SUPPORT",
+        "OTHER"
+      ]
+    },
+    "property_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "h1": {
+      "type": "string"
+    },
+    "h2s": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "h3s": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "body_text": {
+      "type": "string"
+    },
+    "word_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "language": {
+      "type": "string",
+      "default": "en-IN"
+    },
+    "indexability": {
+      "type": "string",
+      "enum": [
+        "INDEXABLE",
+        "NOINDEX",
+        "REDIRECT",
+        "BLOCKED"
+      ]
+    },
+    "canonical_status": {
+      "type": "string",
+      "enum": [
+        "CANONICAL_SELF",
+        "CANONICAL_POINTS_TO_OTHER",
+        "DUPLICATE_CANONICAL",
+        "MISSING"
+      ]
+    },
+    "robots_directive": {
+      "type": "string"
+    },
+    "status_code": {
+      "type": "integer"
+    },
+    "content_source": {
+      "type": "string"
+    },
+    "content_version": {
+      "type": "string"
+    },
+    "first_published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "last_modified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_crawled_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "target_keyword_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "secondary_keyword_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_intent": {
+      "type": "string",
+      "enum": [
+        "NAVIGATIONAL",
+        "INFORMATIONAL",
+        "COMMERCIAL_INVESTIGATION",
+        "TRANSACTIONAL",
+        "LOCAL",
+        "DESTINATION",
+        "PROPERTY",
+        "EXPERIENCE",
+        "BOOKING"
+      ]
+    },
+    "commercial_intent": {
+      "type": "string",
+      "enum": [
+        "VERY_HIGH",
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "conversion_intent": {
+      "type": "string",
+      "enum": [
+        "DIRECT_BOOKING",
+        "WHATSAPP_ENQUIRY",
+        "PHONE_CALL",
+        "LEAD_FORM",
+        "INFORMATIONAL_DISCOVERY"
+      ]
+    },
+    "schema_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "internal_links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "external_links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "image_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "image_alt_coverage": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "content_quality": {
+      "type": "string",
+      "enum": [
+        "EXCELLENT",
+        "STRONG",
+        "GOOD",
+        "PARTIAL",
+        "WEAK",
+        "UNKNOWN"
+      ]
+    },
+    "ai_sourceability": {
+      "type": "string",
+      "enum": [
+        "EXCELLENT",
+        "STRONG",
+        "GOOD",
+        "PARTIAL",
+        "WEAK",
+        "UNKNOWN"
+      ]
+    },
+    "recommended_action": {
+      "type": "string",
+      "enum": [
+        "KEEP",
+        "OPTIMIZE",
+        "REWRITE",
+        "EXPAND",
+        "CONSOLIDATE",
+        "REDIRECT",
+        "NOINDEX",
+        "PROTECTED",
+        "DO_NOT_TOUCH"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "PENDING_REVIEW",
+        "REVISION_REQUIRED"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "page_id",
+    "url",
+    "canonical_url",
+    "route",
+    "page_type",
+    "title",
+    "meta_description",
+    "h1",
+    "body_text",
+    "word_count",
+    "language",
+    "indexability",
+    "canonical_status",
+    "robots_directive",
+    "status_code",
+    "content_source",
+    "content_version",
+    "last_modified_at",
+    "last_crawled_at",
+    "search_intent",
+    "commercial_intent",
+    "conversion_intent",
+    "priority",
+    "owner",
+    "verification_status"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/learning.json",
+  "title": "Learning",
+  "description": "Bayesian strategic inference derived from verified performance telemetry or experiments.",
+  "type": "object",
+  "properties": {
+    "learning_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "category": {
+      "type": "string"
+    },
+    "source_experiment_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observation": {
+      "type": "string"
+    },
+    "insight": {
+      "type": "string"
+    },
+    "actionable_takeaway": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "recorded_by": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "learning_id",
+    "date",
+    "category",
+    "observation",
+    "insight",
+    "actionable_takeaway",
+    "confidence",
+    "recorded_by"
+  ]
+}

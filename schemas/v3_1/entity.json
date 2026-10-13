@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/entity.json",
+  "title": "Entity",
+  "description": "Canonical business, physical, or conceptual entity in the Vivaak / Vaza ecosystem.",
+  "type": "object",
+  "properties": {
+    "entity_id": {
+      "type": "string",
+      "description": "Unique entity identifier."
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "BRAND",
+        "PROPERTY",
+        "LOCATION",
+        "DESTINATION",
+        "AMENITY",
+        "EXPERIENCE",
+        "SERVICE",
+        "EVENT",
+        "FOOD",
+        "ATTRACTION",
+        "PERSON",
+        "ORGANIZATION",
+        "CONCEPT",
+        "QUERY_TOPIC"
+      ],
+      "description": "Canonical entity classification."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name."
+    },
+    "canonical_name": {
+      "type": "string",
+      "description": "Unique standardized entity name."
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Detailed entity description."
+    },
+    "parent_entity_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Reference to parent entity ID."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Known entity aliases."
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Geographical location context."
+    },
+    "properties": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Dynamic attribute key-value pairs."
+    },
+    "source": {
+      "type": "string",
+      "description": "Originating source of entity record."
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether entity has been verified."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "PARTIALLY_VERIFIED",
+        "UNVERIFIED",
+        "CONFLICTING",
+        "UNKNOWN"
+      ],
+      "description": "Strict verification state."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "entity_id",
+    "entity_type",
+    "name",
+    "canonical_name",
+    "source",
+    "verified",
+    "verification_status",
+    "created_at",
+    "updated_at"
+  ]
+}

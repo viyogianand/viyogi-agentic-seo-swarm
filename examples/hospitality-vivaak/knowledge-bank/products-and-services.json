@@ -1,0 +1,21 @@
+{
+  "catalog_version": "2026.1",
+  "properties": [
+    {
+      "property_id": "prop_the_vivaak_dharampur",
+      "name": "The Vivaak Villa (Dharampur)",
+      "bedrooms": 6,
+      "bathrooms": 6,
+      "guest_capacity": 18,
+      "amenities": ["Infinity Deck", "Bonfire Pit", "Private Chef Dining", "Mountain Views"]
+    },
+    {
+      "property_id": "prop_twilight_vaza_barog",
+      "name": "Twilight by Vivaak (Vaza Villa Barog)",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "guest_capacity": 12,
+      "amenities": ["Private Temperature-Controlled Heated Plunge Pool", "Sunset Verandah", "Private Chef"]
+    }
+  ]
+}

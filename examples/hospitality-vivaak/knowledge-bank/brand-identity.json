@@ -1,0 +1,23 @@
+{
+  "entity_id": "ent_vivaak_master",
+  "brand_name": "The Vivaak",
+  "legal_name": "The Vivaak Luxury Estates",
+  "locations": [
+    {
+      "location_id": "loc_dharampur",
+      "name": "The Vivaak (Dharampur)",
+      "address": "Subathu Road, Mohan Bawri, Dharampur, HP 173209",
+      "latitude": 30.9022,
+      "longitude": 77.0189
+    },
+    {
+      "location_id": "loc_barog",
+      "name": "Twilight by Vivaak (Vaza)",
+      "address": "Laghech Valley Road, Padgyani, Barog, HP 173229",
+      "latitude": 30.8845,
+      "longitude": 77.0789
+    }
+  ],
+  "phone": "+91 86448 64490",
+  "website_url": "https://vivaak.com"
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/universal_record_metadata.json",
+  "title": "Universal Record Metadata",
+  "description": "Universal metadata fields required on all persistent system records.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique persistent identifier."
+    },
+    "record_type": {
+      "type": "string",
+      "description": "Canonical object type."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation timestamp in ISO 8601."
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification timestamp in ISO 8601."
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "DATAFORSEO",
+        "GSC",
+        "GA4",
+        "GTM",
+        "FIRECRAWL",
+        "WEBSITE_REPOSITORY",
+        "VIVAAK_KNOWLEDGE_BASE",
+        "HUMAN",
+        "AGENT"
+      ],
+      "description": "Originating source system."
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Identifier supplied by source if available."
+    },
+    "source_timestamp": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "When source record was retrieved."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "DRAFT",
+        "PENDING_REVIEW",
+        "APPROVED",
+        "IMPLEMENTED",
+        "ARCHIVED",
+        "REJECTED",
+        "UNKNOWN"
+      ],
+      "description": "Current lifecycle status."
+    },
+    "confidence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN",
+        null
+      ],
+      "description": "Confidence level of record."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Contextual operational remarks."
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "record_type",
+    "created_at",
+    "updated_at",
+    "source",
+    "status"
+  ]
+}

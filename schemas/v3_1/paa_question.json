@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/paa_question.json",
+  "title": "PAA Question",
+  "description": "People Also Ask question extracted from SERP for AEO targeting.",
+  "type": "object",
+  "properties": {
+    "paa_id": {
+      "type": "string"
+    },
+    "keyword_id": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "normalized_question": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_serp_id": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "parent_question_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "intent": {
+      "type": "string"
+    },
+    "mapped_page_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recommended_content_location": {
+      "type": "string",
+      "enum": [
+        "H2",
+        "H3",
+        "FAQ",
+        "BODY",
+        "EXISTING_PAGE",
+        "NEW_PAGE",
+        "DO_NOT_TARGET"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "IDENTIFIED",
+        "MAPPED",
+        "IMPLEMENTED",
+        "DISMISSED"
+      ]
+    },
+    "first_seen": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_seen": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "paa_id",
+    "keyword_id",
+    "question",
+    "normalized_question",
+    "language",
+    "country",
+    "source_serp_id",
+    "position",
+    "intent",
+    "recommended_content_location",
+    "status",
+    "first_seen",
+    "last_seen"
+  ]
+}

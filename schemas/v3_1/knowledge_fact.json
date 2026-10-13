@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/knowledge_fact.json",
+  "title": "Knowledge Fact",
+  "description": "Granular verified ground-truth fact maintained by Archivist (#2).",
+  "type": "object",
+  "properties": {
+    "fact_id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "predicate": {
+      "type": "string"
+    },
+    "object": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "VERIFIED",
+        "PARTIALLY_VERIFIED",
+        "UNVERIFIED",
+        "CONFLICTING"
+      ]
+    },
+    "verified_by": {
+      "type": "string"
+    },
+    "verified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "fact_id",
+    "subject",
+    "predicate",
+    "object",
+    "entity_id",
+    "value",
+    "source",
+    "verified",
+    "verification_status",
+    "verified_by",
+    "verified_at"
+  ]
+}

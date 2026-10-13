@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/property.json",
+  "title": "Property",
+  "description": "Luxury stay or estate property entity (The Vivaak Villa, Vaza Villa, etc.).",
+  "type": "object",
+  "properties": {
+    "property_id": {
+      "type": "string",
+      "description": "Unique property identifier."
+    },
+    "brand_id": {
+      "type": "string",
+      "description": "Reference to parent brand entity_id (e.g., ENT-BRAND-VIVAAK)."
+    },
+    "name": {
+      "type": "string",
+      "description": "Property name."
+    },
+    "canonical_name": {
+      "type": "string",
+      "description": "Canonical property name."
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "VILLA",
+        "HOTEL",
+        "RESORT",
+        "HOMESTAY",
+        "RETREAT",
+        "OTHER"
+      ],
+      "description": "Property category."
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed verified narrative of property."
+    },
+    "location_id": {
+      "type": "string",
+      "description": "Foreign key reference to LOCATION schema."
+    },
+    "address": {
+      "type": "string",
+      "description": "Physical address."
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Geographic latitude coordinate."
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Geographic longitude coordinate."
+    },
+    "bedrooms": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Verified bedroom count."
+    },
+    "bathrooms": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Verified bathroom count."
+    },
+    "guest_capacity": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Maximum comfortable guest capacity."
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of AMENITY IDs."
+    },
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of EXPERIENCE IDs."
+    },
+    "ideal_for": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Target traveler/stay personas."
+    },
+    "booking_methods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Available booking pathways."
+    },
+    "official_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical absolute URL."
+    },
+    "image_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "High-res CDN image URLs."
+    },
+    "verified_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of CLAIM IDs."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "INACTIVE",
+        "DRAFT"
+      ]
+    },
+    "last_verified_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "property_id",
+    "brand_id",
+    "name",
+    "canonical_name",
+    "property_type",
+    "description",
+    "location_id",
+    "address",
+    "latitude",
+    "longitude",
+    "bedrooms",
+    "bathrooms",
+    "guest_capacity",
+    "official_url",
+    "status",
+    "last_verified_at"
+  ]
+}

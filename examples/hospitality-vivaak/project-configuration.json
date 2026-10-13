@@ -1,0 +1,23 @@
+{
+  "project_id": "vivaak-vaza-reference",
+  "project_name": "The Vivaak & Vaza Growth System",
+  "domain": "https://vivaak.com",
+  "business_type": "HOSPITALITY",
+  "target_markets": [
+    {"country": "IN", "region": "Delhi NCR", "priority": "P0"},
+    {"country": "IN", "region": "Chandigarh / Punjab", "priority": "P0"}
+  ],
+  "storage_adapter": "FIREBASE_RTDB",
+  "governance": {
+    "level_b_approval_required": true,
+    "level_c_approval_required": true,
+    "approval_queue_file": "APPROVAL_QUEUE.md"
+  },
+  "connected_services": {
+    "dataforseo_enabled": true,
+    "gsc_enabled": true,
+    "ga4_enabled": true,
+    "google_business_profile_enabled": true,
+    "indexnow_enabled": true
+  }
+}

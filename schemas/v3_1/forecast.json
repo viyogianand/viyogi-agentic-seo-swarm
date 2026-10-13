@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/forecast.json",
+  "title": "Forecast",
+  "description": "P10/P50/P90 predictive range model for keyword ranking and inquiry trajectories.",
+  "type": "object",
+  "properties": {
+    "forecast_id": {
+      "type": "string"
+    },
+    "date_created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyword_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "baseline_position": {
+      "type": "number"
+    },
+    "target_position": {
+      "type": "number"
+    },
+    "forecast_window": {
+      "type": "string",
+      "enum": [
+        "1_4_WEEKS",
+        "4_8_WEEKS",
+        "8_12_WEEKS",
+        "3_6_MONTHS",
+        "6_12_MONTHS",
+        "UNKNOWN"
+      ]
+    },
+    "expected_result": {
+      "type": "object",
+      "properties": {
+        "p10_pessimistic": {
+          "type": "number"
+        },
+        "p50_realistic": {
+          "type": "number"
+        },
+        "p90_optimistic": {
+          "type": "number"
+        },
+        "expected_impressions": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "expected_ctr": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "expected_inquiries": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "p10_pessimistic",
+        "p50_realistic",
+        "p90_optimistic"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "UNKNOWN"
+      ]
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "actual_result": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "actual_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "forecast_error": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Calculated Prediction Error Score (PES)"
+    },
+    "calibration_status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "CALIBRATED",
+        "MISCALIBRATED"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "forecast_id",
+    "date_created",
+    "keyword_id",
+    "page_id",
+    "baseline_position",
+    "target_position",
+    "forecast_window",
+    "expected_result",
+    "confidence",
+    "calibration_status"
+  ]
+}

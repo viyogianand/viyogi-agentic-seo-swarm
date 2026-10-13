@@ -1,0 +1,19 @@
+{
+  "entity_id": "ent_suntec_master",
+  "brand_name": "Suntec Enterprises",
+  "legal_name": "Suntec Enterprises Private Limited",
+  "founding_year": 2001,
+  "headquarters": {
+    "street_address": "Sector 49, Industrial Area",
+    "city": "Faridabad",
+    "state": "Haryana",
+    "postal_code": "121001",
+    "country": "India",
+    "latitude": 28.3756,
+    "longitude": 77.2984,
+    "plus_code": "9F83+4V Faridabad, Haryana"
+  },
+  "official_phone": "+91-98110-XXXXX",
+  "official_email": "info@suntecenterprises.com",
+  "website_url": "https://suntecenterprises.com"
+}

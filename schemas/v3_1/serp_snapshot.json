@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/serp_snapshot.json",
+  "title": "SERP Snapshot",
+  "description": "Point-in-time capture of complete SERP for a target query and location.",
+  "type": "object",
+  "properties": {
+    "serp_snapshot_id": {
+      "type": "string"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "keyword_id": {
+      "type": "string"
+    },
+    "search_engine": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "device": {
+      "type": "string"
+    },
+    "search_type": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "position": {
+            "type": "integer"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "breadcrumb": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "result_type": {
+            "type": "string"
+          },
+          "featured_snippet": {
+            "type": "boolean"
+          },
+          "domain_rank": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "page_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "position",
+          "url",
+          "domain",
+          "title"
+        ]
+      }
+    },
+    "serp_features": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "paa_questions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "related_searches": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ai_features": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "ai_overview_present": {
+          "type": "boolean"
+        },
+        "ai_mode_present": {
+          "type": "boolean"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "local_results": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "knowledge_graph": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "organic_result_count": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "serp_snapshot_id",
+    "keyword",
+    "keyword_id",
+    "search_engine",
+    "country",
+    "location",
+    "language",
+    "device",
+    "retrieved_at",
+    "results",
+    "organic_result_count"
+  ]
+}

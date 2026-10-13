@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/strategic_rule.json",
+  "title": "Strategic Rule",
+  "description": "Permanent operational heuristic or hard constraint governed by Sentinel and Archivist.",
+  "type": "object",
+  "properties": {
+    "rule_id": {
+      "type": "string"
+    },
+    "rule_title": {
+      "type": "string"
+    },
+    "rule_statement": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "LUXURY_VOICE",
+        "ENTITY_FACT",
+        "TECHNICAL_SEO",
+        "SCHEMA",
+        "SAFETY_VETO",
+        "DEPLOYMENT"
+      ]
+    },
+    "enforcement_level": {
+      "type": "string",
+      "enum": [
+        "MANDATORY",
+        "HIGH_RECOMMENDATION",
+        "GUIDELINE"
+      ]
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "rule_id",
+    "rule_title",
+    "rule_statement",
+    "category",
+    "enforcement_level",
+    "active",
+    "created_at"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/amenity.json",
+  "title": "Amenity",
+  "description": "Physical amenity or luxury facility offered at a Vivaak / Vaza property.",
+  "type": "object",
+  "properties": {
+    "amenity_id": {
+      "type": "string"
+    },
+    "property_id": {
+      "type": "string",
+      "description": "Foreign key reference to PROPERTY schema."
+    },
+    "name": {
+      "type": "string"
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "POOL",
+        "JACUZZI",
+        "DINING",
+        "ROOM",
+        "ENTERTAINMENT",
+        "OUTDOOR",
+        "WELLNESS",
+        "FAMILY",
+        "PET",
+        "EVENT",
+        "SERVICE",
+        "OTHER"
+      ]
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "SEASONAL",
+        "ON_REQUEST",
+        "UNAVAILABLE",
+        "UNKNOWN"
+      ]
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "last_verified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "related_queries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "amenity_id",
+    "property_id",
+    "name",
+    "canonical_name",
+    "description",
+    "category",
+    "availability",
+    "verified",
+    "source",
+    "last_verified_at"
+  ]
+}

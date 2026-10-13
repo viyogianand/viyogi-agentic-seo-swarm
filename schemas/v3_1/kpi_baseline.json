@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/kpi_baseline.json",
+  "title": "KPI Baseline",
+  "description": "Historical ground-truth performance baseline across GSC, GA4, Bing, and Direct Inquiries.",
+  "type": "object",
+  "properties": {
+    "baseline_id": {
+      "type": "string"
+    },
+    "property_name": {
+      "type": "string"
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "gsc_clicks": {
+      "type": "integer"
+    },
+    "gsc_impressions": {
+      "type": "integer"
+    },
+    "gsc_avg_ctr": {
+      "type": "number"
+    },
+    "gsc_avg_position": {
+      "type": "number"
+    },
+    "ga4_total_users": {
+      "type": "integer"
+    },
+    "ga4_sessions": {
+      "type": "integer"
+    },
+    "ga4_engagement_rate": {
+      "type": "number"
+    },
+    "direct_inquiries": {
+      "type": "integer"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "verified_by": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "baseline_id",
+    "property_name",
+    "period_start",
+    "period_end",
+    "gsc_clicks",
+    "gsc_impressions",
+    "gsc_avg_ctr",
+    "gsc_avg_position",
+    "ga4_total_users",
+    "ga4_sessions",
+    "created_at",
+    "verified_by"
+  ]
+}

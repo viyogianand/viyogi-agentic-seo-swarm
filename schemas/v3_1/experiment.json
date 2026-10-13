@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/experiment.json",
+  "title": "Experiment",
+  "description": "Controlled on-page, architectural, or internal linking SEO test.",
+  "type": "object",
+  "properties": {
+    "experiment_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "page_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "keyword_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "baseline": {
+      "type": "object"
+    },
+    "change": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "expected_result": {
+      "type": "string"
+    },
+    "success_metric": {
+      "type": "string"
+    },
+    "control": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "variant": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "actual_result": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "statistical_confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "INCONCLUSIVE"
+      ]
+    },
+    "conclusion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "learning": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "RUNNING",
+        "COMPLETED",
+        "ABORTED",
+        "INCONCLUSIVE"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "experiment_id",
+    "name",
+    "hypothesis",
+    "page_ids",
+    "keyword_ids",
+    "baseline",
+    "change",
+    "start_date",
+    "end_date",
+    "expected_result",
+    "success_metric",
+    "statistical_confidence",
+    "status",
+    "owner"
+  ]
+}

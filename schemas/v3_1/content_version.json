@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/content_version.json",
+  "title": "Content Version",
+  "description": "Reversible point-in-time snapshot of page markup, content, and metadata.",
+  "type": "object",
+  "properties": {
+    "version_id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "version_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content_snapshot": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "h1": {
+      "type": "string"
+    },
+    "h2s": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "h3s": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_snapshot": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "internal_links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "ARCHIVED",
+        "DRAFT"
+      ]
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "version_id",
+    "page_id",
+    "version_number",
+    "content_snapshot",
+    "title",
+    "meta_description",
+    "h1",
+    "created_at",
+    "created_by",
+    "reason",
+    "status"
+  ]
+}

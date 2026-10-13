@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vivaak.com/schemas/v3_1/strategy_state.json",
+  "title": "Strategy State",
+  "description": "Real-time operational snapshot of the 21-agent autonomous growth system.",
+  "type": "object",
+  "properties": {
+    "state_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "current_phase": {
+      "type": "string"
+    },
+    "north_star": {
+      "type": "object",
+      "properties": {
+        "target_quarter": {
+          "type": "string"
+        },
+        "target_inquiries": {
+          "type": "integer"
+        },
+        "current_inquiries": {
+          "type": "integer"
+        },
+        "focus_markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "focus_entities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "target_quarter",
+        "focus_markets",
+        "focus_entities"
+      ]
+    },
+    "top_priorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_opportunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "active_experiments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recent_learnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forecast_summary": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "competitor_summary": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "ai_visibility_summary": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "next_best_action": {
+      "type": "object"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "updated_by": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "required": [
+    "state_id",
+    "date",
+    "current_phase",
+    "north_star",
+    "top_priorities",
+    "top_opportunities",
+    "top_risks",
+    "active_experiments",
+    "recent_learnings",
+    "next_best_action",
+    "reason",
+    "updated_by"
+  ]
+}
