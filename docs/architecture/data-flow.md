@@ -20,7 +20,33 @@ Data moves through the swarm across **8 distinct lifecycle phases**. At every tr
 
 ---
 
-## 2. Phase-by-Phase Execution Flow
+## 2. Data Source Authority & Provenance Model
+
+To prevent hallucinations, conflicting metric interpretations, and data contamination, data flow adheres to a strict **Source Authority Hierarchy** and **Universal Provenance Envelope**:
+
+### 2.1 Authority Hierarchy
+1. **First-Party Ground Truth (Highest Authority):**
+   - **Google Search Console API:** Authoritative on actual Google impressions, clicks, query rankings, and index coverage.
+   - **Google Analytics 4 Data API:** Authoritative on sessions, engagement duration, form completions, and commercial inquiries/RFQs.
+   - **Knowledge Bank & D1 / RTDB Stores:** Authoritative on verified brand facts, technical specs, tolerances, and pricing.
+2. **External Competitive Truth:**
+   - **DataForSEO API Suite:** Authoritative on live SERP layouts, competitor rankings, Google PAA questions, and search volumes.
+   - **Firecrawl API / Clean Parsers:** Authoritative on competitor heading hierarchy, page depth, and on-page structured data.
+3. **Validation & Supplementary Layer:**
+   - **Google Ads Keyword Planner:** Commercial CPC and advertiser competition validation.
+   - **Bing Webmaster Tools & IndexNow:** Bing SERP metrics and instant crawler dispatch.
+
+### 2.2 Universal Data Provenance Schema
+Every measurement and finding emitted through the swarm carries an immutable provenance envelope (`universal_record_metadata.json`):
+- `provenance_id`: Unique UUID v4 for the observation event.
+- `source`: Explicit source identifier (`GSC_SEARCH_ANALYTICS`, `GA4_DATA_API`, `DATAFORSEO_LIVE_SERP`, etc.).
+- `evidence_level`: One of `OBSERVED`, `MEASURED`, `INFERRED`, `HYPOTHESIS`.
+- `retrieved_at`: ISO 8601 timestamp.
+- `confidence`: `HIGH`, `MEDIUM`, or `LOW`. Records lacking provenance are automatically discarded by Conductor.
+
+---
+
+## 3. Phase-by-Phase Execution Flow
 
 ```mermaid
 sequenceDiagram

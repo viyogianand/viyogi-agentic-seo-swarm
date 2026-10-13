@@ -21,6 +21,7 @@ This directory documents the 6 primary multi-agent workflows verified and operat
 | **[4. Backlink Intelligence & Digital PR](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/workflows/backlink-and-digital-pr.md)** | Authority gap quantification, media contact research, and personalized editorial pitch email drafting. | Envoy, Networker, Herald |
 | **[5. Local SEO & Google Business Profile](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/workflows/local-seo-and-gmb.md)** | Google Maps 3-Pack optimization, NAP character alignment, local geo-schema, and keyword-rich review response drafting. | Localist, Schema Master, Conductor |
 | **[6. Experimentation & Forecast Calibration](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/workflows/experiment-and-forecast-calibration.md)** | Setting P10/P50/P90 outcome ranges, 28-day measurement windows, and retrospective Prediction Error Score calibration. | Forecaster, Conductor, Archivist |
+| **[7. Search Intelligence & Technical Autonomy](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/workflows/search-intelligence-and-technical-autonomy.md)** | 10-capability automated diagnostic across Query Fan-Out, Information Gain, Cannibalization, Crawl Budget, Bloat, Striking-Distance, Answerability, Abuse, Entity Graph, and GEO. | Conductor, Prospector, Shadow, Gardener, Mechanic, Scout, Answerer, Tuner, Sentinel, Archivist, Beacon |
 
 ---
 
