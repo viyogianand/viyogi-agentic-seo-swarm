@@ -40,6 +40,7 @@ Prospector uncovers high-intent commercial, technical, and procurement queries f
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Query Fan-Out Intelligence (`QueryFanOutAnalyzer`):** Distinguishes observed search data (Google PAA, featured snippets) from modeled query fan-out. Generates a 5-tier directed taxonomy graph: Core Concept $\rightarrow$ Prerequisites $\rightarrow$ Commercial Specs $\rightarrow$ Downstream Applications $\rightarrow$ Operational Failure Modes (`scripts/search_intelligence_engine.py`).
   - Keyword extraction via DataForSEO Suggestions and Google Ads Keyword Planner API (`seo/keyword_planner.py`).
   - Search volume, CPC, and competition level ingestion.
   - Semantic clustering based on intent and entity relationships.

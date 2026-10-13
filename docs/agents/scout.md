@@ -40,6 +40,7 @@ Scout tracks live rankings across Google and Bing for prioritized commercial sea
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Striking-Distance Keyword Intel (`StrikingDistanceAnalyzer`):** Batch scans commercial queries ranking between positions **4.0 and 20.0**. Computes the Opportunity Index ($\text{Volume} \times \text{Commercial Intent Weight} \times \frac{21 - \text{Rank}}{20}$), populating an actionable on-page refinement queue for Tuner and Answerer (`scripts/search_intelligence_engine.py`).
   - Live SERP retrieval via DataForSEO Live Advanced Google SERP API.
   - GSC rank tracking via `gsc-mcp` and direct OAuth script (`gsc_rank_tracker.py`).
   - Automatic classification of striking-distance queries (`4.0 <= position <= 20.0`).

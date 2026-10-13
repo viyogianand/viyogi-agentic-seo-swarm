@@ -40,6 +40,7 @@ Tuner fine-tunes Scribe's prose for search engine mechanics. It optimizes title 
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Passage Answerability On-Page Optimization (`PassageAnswerabilityAnalyzer` Collaboration):** Ingests passage answerability gap reports and refines hero intro sections and heading subsections into entity-dense direct answer snippets eliminating preamble and maximizing machine extractability (`scripts/search_intelligence_engine.py`).
   - Strict character counting and pixel truncation simulation for SERP snippets.
   - Heading tag hierarchy verification.
   - Contextual link anchor insertion into existing sentences.

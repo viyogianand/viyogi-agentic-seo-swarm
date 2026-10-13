@@ -36,8 +36,8 @@ Answerer prepares content for **Answer Engine Optimization (AEO)** and **Generat
 
 ---
 
-### D. Capabilities
 - **Verified Capabilities:**
+  - **Passage-Level Answerability Analysis (`PassageAnswerabilityAnalyzer`):** Chunks page content into semantic passages (40–80 words) and scores answerability based on entity-first syntax, factual number/tolerance density, conciseness, and zero preamble. Automatically detects Answerability Gaps against live Google PAA queries (`scripts/search_intelligence_engine.py`).
   - Structuring high-probability Featured Snippet answer blocks (40–60 words, inverted pyramid style).
   - FAQ accordion copy generation answering verified PAA questions.
   - Formatting comparison tables and technical tolerance lists.

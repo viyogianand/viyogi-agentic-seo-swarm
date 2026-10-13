@@ -50,6 +50,16 @@ Every capability in the Viyogi framework is rigorously classified based on empir
 | **Reporting & Executive Analytics** | Executive Markdown Progress Reports | **Implemented & Tested** | Reporter | Python Markdown Generator | `generate_monthly_updates.py` |
 | | Multi-Tab Styled Excel Master Trackers | **Implemented & Tested** | Reporter | Python `openpyxl` Generator | `generate_vivaak_dashboards.py` |
 | | Commercial Inquiry & RFQ Attribution | **Implemented & Tested** | Reporter, Conductor | GA4 Key Events & CMS Submission Logs | `Master_Operations_and_SEO_Tracker.xlsx` |
+| **Search Intelligence & Technical Autonomy Layer** | **1. Query Fan-Out Intelligence** | **Implemented & Tested** | Prospector (#5) | DataForSEO PAA, Directed Taxonomy Tree | `scripts/search_intelligence_engine.py` |
+| | **2. Information Gain Analysis** | **Implemented & Tested** | Shadow (#6), Editor (#20) | SERP Competitor Scraper, Novelty Scorer (0-100) | `scripts/search_intelligence_engine.py` |
+| | **3. Keyword Cannibalization Detection** | **Implemented & Tested** | Gardener (#8) | URL Pairwise Intent & Ranking Overlap | `scripts/search_intelligence_engine.py` |
+| | **4. Crawl Budget Efficiency** | **Implemented & Tested** | Mechanic (#16) | Architectural Depth, Traps, Sitemap Check | `scripts/search_intelligence_engine.py` |
+| | **5. Index Bloat Detection** | **Implemented & Tested** | Mechanic (#16), Gardener (#8) | Thin Content Auditor, Index Efficiency Ratio | `scripts/search_intelligence_engine.py` |
+| | **6. Striking-Distance Keyword Intel** | **Implemented & Tested** | Scout (#4) | Positions 4–20 Filter, Opportunity Index | `scripts/search_intelligence_engine.py` |
+| | **7. Passage Answerability Analysis** | **Implemented & Tested** | Answerer (#14), Tuner (#13) | Semantic Chunker (40-80w), AEO Gap Detector | `scripts/search_intelligence_engine.py` |
+| | **8. Site Reputation Abuse Monitoring** | **Implemented & Tested** | Sentinel (#3) | Parasite Route Audit, Outbound Link Integrity | `scripts/search_intelligence_engine.py` |
+| | **9. Entity Salience & Graph Analysis** | **Implemented & Tested** | Archivist (#2), Schema Master (#15) | Salience Scorer, Knowledge Graph Triples | `scripts/search_intelligence_engine.py` |
+| | **10. GEO Measurement (AI Overviews)** | **Implemented & Tested** | Beacon (#9) | Google AI Overview Scraper, AI Share of Voice | `scripts/search_intelligence_engine.py` |
 
 ---
 

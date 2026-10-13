@@ -43,6 +43,7 @@ Editor guards the website's content architecture. It acts as the editorial strat
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Information Gain Briefing (`InformationGainAnalyzer` Integration):** Ingests competitor entity gap data and mandates specific original metallurgical/domain tables, testing thresholds, and comparison matrices in content briefs to guarantee superior Information Gain scores against top SERP URLs (`scripts/search_intelligence_engine.py`).
   - Automated generation of complete `CONTENT_BRIEF` records.
   - Structural heading blueprinting with explicit entity coverage requirements.
   - Cannibalization prevention: rejecting new page creation when an existing page can be updated.

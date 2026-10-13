@@ -39,6 +39,7 @@ Shadow monitors competitors' digital footprints. It deconstructs their website a
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Information Gain Analysis (`InformationGainAnalyzer`):** Scrapes and extracts topical entities, technical data tables, and FAQ coverage from top 5 organic competitors. Computes a quantitative Information Gain Score ($0–100$) evaluating novel data points (hardness tolerances, cycle life), actionable tools/comparisons, depth/spec completeness, and directness (`scripts/search_intelligence_engine.py`).
   - Structured extraction via Firecrawl API and Python `RobustHTMLParser`.
   - Heading hierarchy comparison (our page vs #1 ranking competitor).
   - Identification of structured data gaps (e.g., competitor has `Product` schema, we do not).

@@ -41,6 +41,7 @@ Archivist serves as the **Single Source of Truth** for the entire swarm. It main
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Entity Salience & Graph Analysis (`EntitySalienceAnalyzer`):** Extracts named domain entities, evaluates structural prominence (URL slug, Title, H1, first 100 words), constructs formal RDF Knowledge Graph triples ($\text{Subject} \xrightarrow{\text{Predicate}} \text{Object}$), and cross-references page claims against verified facts in Strategic Memory (`scripts/search_intelligence_engine.py`).
   - High-speed key-value and entity relationship lookups against JSON/D1 stores.
   - Expiration-aware caching (7-day SERP TTL, infinite fact TTL).
   - Promotion logic: elevating repeated empirical findings into Level 4 Strategic Rules.

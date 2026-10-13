@@ -36,8 +36,9 @@ Gardener guards existing website equity. It identifies decaying pages suffering 
 
 ---
 
-### D. Capabilities
 - **Verified Capabilities:**
+  - **Keyword Cannibalization Detection (`CannibalizationDetector`):** Conducts pairwise semantic title and intent similarity scans across site pages. Detects multi-URL SERP conflicts in the top 100, assigns severity (`CRITICAL`, `HIGH`, `MODERATE`), and routes remediation actions (`CANONICAL_CONSOLIDATION`, `301_REDIRECT`, `DE_OPTIMIZE_SECONDARY`) to the human approval queue (`scripts/search_intelligence_engine.py`).
+  - **Index Bloat Collaboration (`IndexBloatDetector`):** Identifies thin content, duplicate topical pages, and redundant URLs diluting internal link equity and organic crawl prioritization (`scripts/search_intelligence_engine.py`).
   - Detection of pages with >20% loss in clicks or impressions over 30 days.
   - Identification of cannibalizing query-page pairs from GSC data.
   - Contextual link anchor generation linking Product ➔ Application ➔ FAQ.

@@ -36,8 +36,8 @@ Schema Master engineers valid, rich, and error-free **JSON-LD structured data**.
 
 ---
 
-### D. Capabilities
 - **Verified Capabilities:**
+  - **Entity Salience & Graph Integration (`EntitySalienceAnalyzer`):** Translates extracted RDF knowledge triples ($\text{Subject} \xrightarrow{\text{Predicate}} \text{Object}$) into interconnected Schema.org JSON-LD entity graphs using `@id`, `about`, `mentions`, and `sameAs` entity references (`scripts/search_intelligence_engine.py`).
   - Generation of complete, nested JSON-LD schema objects.
   - Full support for `Organization`, `WebSite`, `BreadcrumbList`, `FAQPage`, `Product`, `LodgingBusiness`, `HotelRoom`.
   - Geo-coordinates and Plus Code enrichment.

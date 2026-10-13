@@ -41,6 +41,7 @@ Sentinel exists as the **uncompromising verification gatekeeper**. It audits eve
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Site Reputation Abuse Monitoring (`ReputationAbuseMonitor`):** Audits application route trees and middleware for unauthorized parasitic subdirectories, scans external outbound links for link rot, spam patterns, or missing security rel tags, and monitors referring domains for high-velocity spam backlink spikes triggering Google's Site Reputation Abuse policies (`scripts/search_intelligence_engine.py`).
   - Claim-by-claim verification diffing.
   - Schema syntax and required property validation.
   - Zero-tolerance veto: instantly blocking deployment when fabricated claims are detected.

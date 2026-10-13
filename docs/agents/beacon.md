@@ -35,8 +35,8 @@ Beacon monitors whether the business is cited, referenced, and recommended as an
 
 ---
 
-### D. Capabilities
 - **Verified Capabilities:**
+  - **Generative Engine Optimization (GEO) Measurement (`GEOMonitor`):** Tracks longitudinal AI Overview appearance rates across commercial queries, detects citations of brand vs competitors (Winoa, Pellets LLC, etc.), computes Share of AI Voice (SOV), and generates actionable structural recommendations (e.g. data table styling, bulleted definitions) (`scripts/search_intelligence_engine.py`).
   - Detection of `ai_overview_present` in DataForSEO SERP snapshots.
   - Logging of competitor domains cited inside AI Overviews.
   - Scoring page content for machine extractability (direct definitions, tables, Q&A blocks).

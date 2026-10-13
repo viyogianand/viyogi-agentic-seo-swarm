@@ -41,6 +41,8 @@ Mechanic is the **sole codebase modification and deployment engineer**. It imple
 
 ### D. Capabilities
 - **Verified Capabilities:**
+  - **Crawl Budget Efficiency Auditing (`CrawlBudgetAuditor`):** Evaluates architectural crawl efficiency, verifying click depth from root ($\le 3$), crawl trap absence (infinite facets, query strings), robots.txt disallow rules against critical assets, and crawler resource consumption (`scripts/search_intelligence_engine.py`).
+  - **Index Bloat Detection (`IndexBloatDetector`):** Scans dynamic sitemap and site routes for thin content risks ($< 300$ words), duplicate/boilerplate metadata, parameter variants, and calculates the Index Efficiency Ratio (`scripts/search_intelligence_engine.py`).
   - Isolated Git branch creation (`seo/feature-update-20261013`).
   - Next.js App Router metadata configuration (`generateMetadata` and JSON-LD script tags).
   - SSG build verification testing.
