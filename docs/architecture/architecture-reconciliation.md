@@ -1,121 +1,100 @@
-# Architecture Reconciliation & Cross-Project Audit
-## Viyogi Agentic SEO Swarm: Empirical Reconciliation of Suntec Enterprises & VivaakVaza Implementations
-
-**Document Type:** Cross-Project Architectural Audit & Reconciliation Record  
-**Version:** 1.0.0  
-**Status:** Authoritative Reconciliation Baseline  
-**Date:** October 13, 2026  
-**Audited Projects:**
-1. **Source A (Original Implementation):** Suntec Enterprises (`Suntec Agentic SEO System Setup`, Conversation ID: `9c8e0d9d-6b57-453e-a0dc-a9730e85acaa`)
-2. **Source B (Second Implementation):** VivaakVaza SEO (`SEO`, Conversation ID: `e13fb0eb-6e21-4c78-9aa3-5465299c632d`)
-
----
-
-## 1. Executive Summary of Audit Findings
-
-The audit confirms that **Viyogi Agentic SEO Swarm** is an evolutionary multi-agent framework originally developed for B2B industrial manufacturing (Suntec Enterprises) and subsequently adapted and refined for luxury hospitality and regional local SEO (VivaakVaza).
-
-Both codebases and project repositories were located, verified, and cross-referenced in the local filesystem and Antigravity runtime environments:
-- **Source A Repository & Workspaces:** `/Users/viyogianand/Desktop/Suntec Enterprises`, `/Users/viyogianand/Desktop/Suntec Enterprises/suntectantigravity`, and Antigravity conversation `9c8e0d9d-6b57-453e-a0dc-a9730e85acaa`.
-- **Source B Repository & Workspaces:** `/Users/viyogianand/Desktop/VivaakVaza`, `/Users/viyogianand/Desktop/VivaakVaza/seo`, `/Users/viyogianand/Desktop/VivaakVaza/schemas/v3_1`, and Antigravity conversation `e13fb0eb-6e21-4c78-9aa3-5465299c632d`.
-
-The reconciliation confirms a **3-stage evolutionary trajectory**:
-1. **System V1.0 (September 21, 2026 - Suntec):** Initial 19-agent token-optimized Antigravity swarm, establishing the Conductor orchestration pattern, the 3-pool execution model (Pool A Read/Analysis, Pool B Sequential Drafting, Pool C Isolated Branch Write), and strict Sentinel verification gates.
-2. **System V2.0 (October 4, 2026 - Suntec):** Expansion to 21 specialized agents with the introduction of **Editor (#20)** and **Forecaster (#21)**, the formalization of 15 stateless Intelligence Engines, an 18-step closed feedback decision loop, and a 4-level Strategic Memory model (Facts -> Observations -> Learnings -> Strategic Rules).
-3. **System V3.0 / V3.1 (October 5–7, 2026 - VivaakVaza):** Domain adaptation to hospitality, introducing **Localist** (dedicated Google Business Profile, Local 3-Pack, and Geo-schema agent), productionizing the Python intelligence pipeline (`run_phase1_intelligence.py`), and formally codifying the **V3.1 Canonical Data Contract** with 24 JSON schema definitions and a standalone validator.
-
----
-
-## 2. Project Access & Verification Status
-
-| Project Reference | Target ID | Verified File Paths | Access Status | Verification Method |
-| :--- | :--- | :--- | :--- | :--- |
-| **Source A: Suntec Enterprises** | `9c8e0d9d-6b57-453e-a0dc-a9730e85acaa` | `/Users/viyogianand/Desktop/Suntec Enterprises`<br>`/Users/viyogianand/Desktop/Suntec Enterprises/suntectantigravity`<br>`/Users/viyogianand/Downloads/Suntec Agentic SEO Swarm...md` | **Fully Verified** | Direct inspection of source markdown blueprints, Python scripts, Cloudflare D1 migrations, and Antigravity session transcript. |
-| **Source B: VivaakVaza SEO** | `e13fb0eb-6e21-4c78-9aa3-5465299c632d` | `/Users/viyogianand/Desktop/VivaakVaza`<br>`/Users/viyogianand/Desktop/VivaakVaza/seo`<br>`/Users/viyogianand/Desktop/VivaakVaza/schemas/v3_1` | **Fully Verified** | Direct inspection of codebase, 34 JSON schema files, OAuth listeners, Python crawl engines, and Antigravity session transcript. |
-
----
-
-## 3. Evolutionary Timeline & Architecture Diff
+# Cross-Project Architecture Reconciliation & Evolutionary Audit
+## Reconciling Suntec Enterprises, VivaakVaza SEO, and Viyogi Agentic SEO Swarm
 
 ```
-  [Sep 21, 2026]                    [Oct 4, 2026]                     [Oct 5-7, 2026]
-   SUNTEC V1.0                       SUNTEC V2.0                       VIVAAK V3.0 / V3.1
-  (19-Agent Swarm)                  (21-Agent Closed Loop)            (Canonical Data Contract)
-┌──────────────────────┐          ┌──────────────────────┐          ┌──────────────────────┐
-│ • 19 Agents          │          │ • 21 Agents          │          │ • 21 Agents          │
-│ • Pool A/B/C Model   │          │ • + Editor (#20)     │          │ • + Localist (GBP)   │
-│ • Sentinel Gate      │   ───►   │ • + Forecaster (#21) │   ───►   │ • 24 Canonical Data  │
-│ • Cloudflare D1      │          │ • 15 Stateless       │          │   Schemas (v3_1)     │
-│ • Token Tiering      │          │   Intelligence       │          │ • Standalone Python  │
-│ • Antigravity SDK    │          │   Engines            │          │   Crawl & GSC Engine │
-│   Semaphore          │          │ • 18-Step Loop       │          │ • Firebase RTDB +    │
-│                      │          │ • 4-Level Memory     │          │   Cloudflare Pages   │
-└──────────────────────┘          └──────────────────────┘          └──────────────────────┘
+========================================================================================
+VIYOGI AGENTIC SEO SWARM — ARCHITECTURAL RECONCILIATION REPORT
+========================================================================================
+```
+
+## 1. Executive Summary & Epistemic Status Model
+
+This document establishes the single source of truth across all three project environments:
+1. **Source A:** `Suntec Agentic SEO System Setup` (ID: `9c8e0d9d-6b57-453e-a0dc-a9730e85acaa`) — Industrial B2B & Core Swarm Evolution.
+2. **Source B:** `VivaakVaza SEO` (ID: `e13fb0eb-6e21-4c78-9aa3-5465299c632d`) — Luxury Hospitality, GMB/Local SEO, and Canonical V3.1 JSON Schemas.
+3. **Source C:** `viyogi-agentic-seo-swarm` — The unified, reusable, project-agnostic GitHub framework repository.
+
+### Epistemic Classification Standard (Rule Zero Speculation)
+Every technical capability, claim, and integration in this framework is strictly classified under the **8-Tier Status Model**:
+- **A. Requested:** Specified in a prompt, brief, or proposal; no functional implementation verified.
+- **B. Designed:** Formal architecture, data contract, or workflow documented, but unexecuted.
+- **C. Implemented:** Operational code, scripts, or agent prompts exist in repository.
+- **D. Tested:** Validated via automated unit, integration, or simulation test suites with logged outputs.
+- **E. Verified Operational:** Proven end-to-end execution in live production with external API confirmation.
+- **F. Partially Implemented:** Functional components exist, but manual human mediation or tooling gaps remain.
+- **G. Blocked / Unavailable:** External credentials missing, authentication mismatched, or environment unprovisioned.
+- **H. Proposed / Idea:** Long-term theoretical extension identified for future consideration.
+
+---
+
+## 2. Comparative Component Inventory & Reconciliation Matrix
+
+| Component / Capability | Origin Project | Primary Source Files | Epistemic Status | Reusability | Reconciliation Decision & Rationale |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| **Swarm Orchestration (Pool A/B/C)** | Suntec V1/V2 | `SUNTEC_AGENTIC_SEO_ARCHITECTURE_V2.md`, `engines/pilot_cycle.py` | **Verified Operational** | Universal Core (Layer 1) | Retained as master orchestration architecture. Pool A (Parallel Intel) ➔ Pool B (Sequential Drafting) ➔ Pool C (Verification & Edge Ops). |
+| **Advisor Agent vs Conductor** | Suntec V1 | `SUNTEC_AGENTIC_SEO_AGENT_ROSTER_V2.md` | **Superseded / Consolidated** | Legacy Reference | Advisor was a passive task-list recorder in V1. Fully absorbed into Conductor in V2/V3. Preserved with deprecation notice. |
+| **Localist (Google Business Profile Agent)** | VivaakVaza | `VIVAAK_AGENTIC_SEO_AGENT_ROSTER_V3.md`, `seo/vivaak_oauth_flow.py` | **Verified Operational** | Conditional (Layer 5) | Integrated as Canonical Agent #24. Essential for local 3-Pack, GBP review response drafting, and local business geo-schemas. |
+| **V3.1 Canonical Schema Suite (30 Draft 2020-12 Schemas)** | VivaakVaza | `schemas/v3_1/*.json`, `validator.py` | **Verified Operational** | Universal Core (Layer 1) | Adopted as universal machine-validated inter-agent data contract. All agent inputs and outputs conform to these contracts. |
+| **4-Tier Strategic Memory Model** | Suntec V2 | `data/strategic_memory.db`, `engines/strategic_memory.py` | **Verified Operational** | Universal Core (Layer 1) | Retained as standard memory: Tier 1 (Facts) ➔ Tier 2 (Observations) ➔ Tier 3 (Learnings) ➔ Tier 4 (Strategic Rules). |
+| **10 Search Intelligence Capabilities** | Suntec Oct 13 | `engines/search_intelligence_engine.py`, `tests/test_search_intelligence.py` | **Tested & Operational** | Universal Core (Layer 2) | Integrated into 12 core agents. Implements Query Fan-Out, Information Gain, Cannibalization, Crawl Budget, Index Bloat, Striking-Distance, Passage Answerability, Abuse, Entity Graph, and GEO. |
+| **AI Optimization API & LLM Mentions** | Suntec Oct 14 | `AI_VISIBILITY_TOOL_AUDIT.md`, `DataForSEO ai_optimization` | **Verified Operational** | Universal Tool (Layer 2) | Discovered and verified DataForSEO `ai_optimization/llm_mentions` and `chat_gpt/llm_scraper`. Proves real AI search volumes and observed ChatGPT recommendations. |
+| **30-Day AI Visibility Sprint Methodology** | Suntec Oct 14 | `AI_VISIBILITY_EXECUTION_PLAN.md`, `AI_VISIBILITY_DAY_30_REPORT.md` | **Tested & Operational** | Universal Workflow (Layer 2) | Codified as reusable AEO/GEO sprint methodology with permanent query panels and baseline measurement standards. |
+| **Brand SERP Recovery & Search Structure** | Suntec Oct 16 | `BRAND_SERP_BASELINE_AUDIT.json`, Transcript step 3950 | **Tested & Operational** | Universal Workflow (Layer 2) | Reconstructed diagnostic workflow addressing entity splitting, competing domains, H1/title dilution, and WebSite schema trailing slash conflicts. |
+| **Linkable Asset Engine (Link Magnet Pattern)** | Suntec Oct 8/13 | `engines/backlink_engine.py`, `BACKLINK_STRATEGY.md` | **Implemented & Tested** | Universal Workflow (Layer 2) | Statistics-hub and citation-magnet architecture producing original benchmark data (e.g. Ervin fatigue curves) to attract passive editorial links. |
+| **GSC / GA4 First-Party Telemetry** | VivaakVaza (Auth) / Suntec (Sim) | `seo/gsc_rank_tracker.py`, `seo/ga4_traffic_monitor.py` | **Partially Implemented (Credential Blocked)** | Universal Adapter (Layer 4) | In Suntec, first-party GSC/GA4 MCP credentials were authenticated to `vivaak.com`. DataForSEO serves as authoritative fallback for rank telemetry. |
+| **Edge Deployment via Cloudflare** | Suntec V2 | `suntectantigravity/deploy-cloudflare.sh`, `wrangler.json` | **Verified Operational** | Edge Runtime Adapter (Layer 4) | Next.js SSG compiled and served with Byte-0 SSR from Cloudflare Workers/Pages. |
+| **Realtime NoSQL State Sync** | VivaakVaza | `vivaak_rtdb_snapshot_latest.json` | **Verified Operational** | Serverless Adapter (Layer 4) | Firebase Realtime Database synchronizing live application state, reservations, and staticDb cache. |
+
+---
+
+## 3. Five-Layer Portable Architecture Mapping
+
+To guarantee that the framework can be deployed across various clients and agent runtimes (Google Antigravity, OpenClaw, Hermes, OpenAI Codex, Claude Code), it is organized into **Five Explicit Architectural Layers**:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│ LAYER 1: CORE SEO SWARM (Universal Orchestration Engine)               │
+│ • 24 Canonical Agents (Conductor, Sentinel, Archivist, etc.)           │
+│ • Pool A/B/C Lifecycle & Level A/B/C Approval Governance Gate           │
+│ • V3.1 JSON Schema Suite (Draft 2020-12) & Inter-Agent Validation     │
+└────────────────────────────────────┬───────────────────────────────────┘
+                                     │ drives
+┌────────────────────────────────────▼───────────────────────────────────┐
+│ LAYER 2: SEO OPERATING KNOWLEDGE (Workflows & Prompt Playbooks)        │
+│ • Search Intelligence Engine (10 Capabilities)                         │
+│ • 30-Day AI Visibility & Citation Acquisition Sprint                   │
+│ • Brand SERP Recovery & Entity Consolidation Runbook                   │
+│ • Linkable Asset & Statistics Magnet Engine                            │
+│ • Conditional SEO Lifecycle Checklist & Standard Prompts               │
+└────────────────────────────────────┬───────────────────────────────────┘
+                                     │ configured by
+┌────────────────────────────────────▼───────────────────────────────────┐
+│ LAYER 3: CLIENT CONFIGURATION & KNOWLEDGE BANK (Isolated per Tenant)   │
+│ • project-configuration.json (Domain, Budget, Target SERPs, Thresholds)│
+│ • knowledge-bank/*.json (Verified Facts, Specifications, Competitors)  │
+│ • human-writing-guide.md (Banned Marketing Buzzwords, Brand Tone)      │
+│ • Strict Cryptographic and Workspace Sandboxing (Zero Leakage)         │
+└────────────────────────────────────┬───────────────────────────────────┘
+                                     │ executed on
+┌────────────────────────────────────▼───────────────────────────────────┐
+│ LAYER 4: RUNTIME ADAPTERS (Multi-Agent Host Environments)              │
+│ • Google Antigravity (Native subagents, Skills, MCP config)            │
+│ • OpenClaw & Hermes (CLI tool calling & persistent memory adapters)    │
+│ • OpenAI Swarm / Codex & Claude Code (Tool use & headless execution)   │
+└────────────────────────────────────▲───────────────────────────────────┘
+                                     │ cross-cutting telemetry
+┌────────────────────────────────────┴───────────────────────────────────┐
+│ LAYER 5: CROSS-CUTTING LEARNING & IMPROVEMENT LOOP                     │
+│ • Causal Learning Engine: Observe ➔ Capture ➔ Classify ➔ Verify ➔ Plan │
+│ • 4-Tier Strategic Memory Promotion (Observations ➔ Learnings ➔ Rules) │
+│ • Retrospective Forecast Calibration (PES Scoring)                     │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 4. Component-by-Component Comparative Inventory
+## 4. Unresolved Architectural Questions & Ongoing Investigations
 
-The following master reconciliation matrix audits every component identified across both projects:
-
-| Component | Origin | Suntec Status | Vivaak Status | Equivalence & Reconciliation Decision | Reusability |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Conductor** | Suntec V1 | Implemented & Documented (V2.0) | Implemented & Documented (V3.0) | **Identical Core Logic**. Chief orchestrator. Answers 12 strategic questions before task dispatching. | **Universal Core** |
-| **Archivist** | Suntec V1 | Implemented (D1 & SQLite) | Implemented (Firebase & JSON) | **Functionally Equivalent**. Fact store & 4-level memory interface. Storage adapter must be abstract. | **Universal Core (Pluggable Store)** |
-| **Sentinel** | Suntec V1 | Implemented (V2.0 Zero-Tolerance) | Implemented (V3.0 Veto Gate) | **Identical Core Logic**. Veto authority over hallucinations, fake claims, and schema defects. | **Universal Core** |
-| **Scout** | Suntec V1 | Implemented (DataForSEO SERP) | Implemented (DataForSEO SERP) | **Identical Core Logic**. Live rank tracking and striking-distance detection (positions 4–20). | **Universal Core** |
-| **Prospector** | Suntec V1 | Implemented (DataForSEO) | Implemented (Keyword Planner) | **Superseded by V3 Scripting**. Vivaak added direct Google Ads Keyword Planner script integration. | **Universal Core** |
-| **Shadow** | Suntec V1 | Implemented (Firecrawl / SERP) | Implemented (Firecrawl / SERP) | **Identical Core Logic**. Scrapes and deconstructs competitor heading structures and content gaps. | **Universal Core** |
-| **Envoy** | Suntec V1 | Implemented (Backlink API) | Implemented (Backlink API) | **Identical Core Logic**. Authority gap analysis and referring domain quality scoring. | **Universal Core** |
-| **Gardener** | Suntec V1 | Implemented (GSC + Link Graph) | Implemented (GSC + staticDb) | **Identical Core Logic**. Content decay detection (>20% drop) and internal link mesh routing. | **Universal Core** |
-| **Beacon** | Suntec V1 | Implemented (AI Overview tracking) | Implemented (AI Overview tracking)| **Identical Core Logic**. Monitors citations in Google AI Overviews, Perplexity, ChatGPT. | **Universal Core** |
-| **Reporter** | Suntec V1 | Implemented (`generate_dashboards.py`) | Implemented (`generate_vivaak_dashboards.py`) | **Functionally Equivalent**. Python script generating executive Markdown and Excel KPI trackers. | **Universal Core (Configurable Templates)** |
-| **Spyglass** | Suntec V2 | Implemented (First-party listener) | Implemented (First-party listener)| **Identical Core Logic**. Telemetry monitor polling GSC, GA4, and Bing crawl streams. | **Universal Core** |
-| **Editor** | Suntec V2 | Implemented (#20 Content Strategist)| Implemented (#20 Content Strategist)| **Identical Core Logic**. Decides New Page vs Update vs Consolidate vs Do Nothing. | **Universal Core** |
-| **Forecaster** | Suntec V2 | Implemented (#21 Range Modeling) | Implemented (#21 Range Modeling) | **Identical Core Logic**. Computes P10/P50/P90 prediction bands and retrospectively calibrates PES. | **Universal Core** |
-| **Scribe** | Suntec V1 | Implemented (Metallurgy drafter) | Implemented (Hospitality drafter) | **Template-Differentiated**. Core drafter uses project-specific writing guide (`HUMAN_B2B` vs `HUMAN_LUXURY`). | **Universal Logic + Project Style Guide** |
-| **Tuner** | Suntec V1 | Implemented (On-page meta & tags)| Implemented (On-page meta & tags)| **Identical Core Logic**. Optimizes titles (<55 chars), meta descriptions (<155 chars), H1-H3. | **Universal Core** |
-| **Answerer** | Suntec V1 | Implemented (AEO direct answers) | Implemented (AEO direct answers) | **Identical Core Logic**. 40-60 word direct answer blocks and FAQ structured blocks. | **Universal Core** |
-| **Schema Master** | Suntec V2 | Implemented (JSON-LD B2B schemas) | Implemented (JSON-LD Lodging) | **Schema-Differentiated**. Core JSON-LD generator configured by entity schema dictionary. | **Universal Core (Configurable Entity Types)** |
-| **Mechanic** | Suntec V1 | Implemented (Next.js / D1 / Worker) | Implemented (Next.js SSG / Pages) | **Functionally Equivalent**. Isolated branch worker (`Workspace: branch`) with local build check. | **Universal Core** |
-| **Scholar** | Suntec V1 | Implemented (Search Policy checker)| Implemented (Search Policy checker)| **Identical Core Logic**. Validates drafts against Google Search Essentials and spam policies. | **Universal Core** |
-| **Networker** | Suntec V1 | Implemented (B2B PR pitch drafter)| Implemented (Luxury PR drafter) | **Identical Core Logic**. Drafts pitches locally for human transmission; zero auto-sending. | **Universal Core** |
-| **Herald** | Suntec V1 | Implemented (Trade fairs / events) | Implemented (Seasonal stays) | **Identical Core Logic**. Aligns content release velocity with real-world events or seasons. | **Universal Core** |
-| **Courier** | Suntec V1 | Implemented (`submit_indexnow.js`) | Implemented (`submit_indexnow.py` + `google_indexing.py`) | **Enhanced in Vivaak**. Subordinate fast broadcaster supports IndexNow and Google Indexing API. | **Universal Core** |
-| **Localist** | Vivaak V3 | Planned as P2 backlog in Suntec | **Fully Implemented in Vivaak** | **Breakthrough Addition in Vivaak**. Manages Google Business Profile, Local 3-Pack, review responses, and geo-coordinates. | **Universal Core (Local/Omnichannel Businesses)** |
-| **Advisor** | Suntec V1 | Implemented (Task-list tracker) | Merged into Conductor in V2/V3 | **Consolidated**. Advisor's lightweight task bookkeeping was absorbed into Conductor's task queue. | **Documented as Legacy / Optional Sub-role** |
-| **15 Intelligence Engines** | Suntec V2 | Formally defined in V2 architecture | Implemented in Python scripts | **Authoritative Subsystem**. Stateless algorithms preventing token bloat in agents. | **Universal Core Engines** |
-| **Data Contracts** | Vivaak V3.1 | Fragmented schemas in Suntec V2 | **34 Formal JSON Schemas in `schemas/v3_1/`** | **Vivaak V3.1 is Superseding Standard**. Authoritative data contract adopted for framework. | **Universal Core Standard** |
-
----
-
-## 5. Reconciliation Decisions & Architectural Synthesis
-
-### Decision 1: Canonical Agent Roster Size
-- **Issue:** Suntec V1 had 19 agents. Suntec V2 had 21 agents (+ Editor, + Forecaster, Courier subordinate). Vivaak V3 had 21 agents with **Localist** added to Layer 5.
-- **Resolution:** The authoritative Viyogi Agentic SEO Swarm maintains **22 canonical agent roles** organized into 5 layers:
-  - **Layer 1: Governance & Strategic Brain (3):** Conductor, Archivist, Sentinel
-  - **Layer 2: Opportunity & Landscape Intelligence (8):** Scout, Prospector, Shadow, Envoy, Gardener, Beacon, Reporter, Spyglass
-  - **Layer 3: Editorial Strategy & Outcome Forecasting (2):** Editor (#20), Forecaster (#21)
-  - **Layer 4: Sequential Content Assembly Line (4):** Scribe, Tuner, Answerer, Schema Master
-  - **Layer 5: Infrastructure, Broadcast, PR & Local Operations (5):** Mechanic, Scholar, Networker, Herald, Localist (with Courier operating as a fast broadcasting subroutine subordinate to Mechanic/Sentinel).
-  - *Legacy Note:* Advisor is documented as a lightweight task-tracking persona for environments lacking a central task engine, but operates under Conductor in standard deployments.
-
-### Decision 2: Adoption of Canonical Data Contract V3.1
-- **Issue:** Suntec documented database tables across Cloudflare D1 SQL schemas, whereas Vivaak defined 24 JSON Schemas under Draft 2020-12 in `schemas/v3_1/`.
-- **Resolution:** The framework adopts the **V3.1 Canonical Data Contract** as its shared protocol. Agents communicate and persist data in strict JSON objects conforming to these schemas, allowing storage backends to be swapped (SQLite, PostgreSQL, Cloudflare D1, Firebase RTDB, or filesystem JSON) without modifying agent prompts or logic.
-
-### Decision 3: Separation of Reusable Logic vs Business Knowledge
-- **Issue:** Both Suntec and Vivaak hardcoded business terminology into prompts (metallurgy in Suntec, boutique villas in Vivaak).
-- **Resolution:** The unified framework strictly decouples:
-  - **Core Logic:** Reusable reasoning instructions, data schemas, verification criteria, and tool integrations.
-  - **Knowledge Bank:** Business identity, verified facts, product catalogs, competitor domains, banned buzzwords, and stylistic guides stored in a standard project repository structure.
-
----
-
-## 6. Unresolved Architectural Questions & Migration Backlog
-
-1. **Autonomous Database Switching:** Currently, Archivist scripts are hardcoded to either Cloudflare D1 (Suntec) or Firebase RTDB (Vivaak). An abstract database driver layer (`StorageAdapter`) is required for full plug-and-play installation.
-2. **Localist API Automation vs Manual Verification:** Google Business Profile API requires complex OAuth app verification for `business.manage` scopes. In Vivaak, this ran via `vivaak_oauth_flow.py` on localhost:38888. A headless service account pattern for enterprise deployments remains an open enhancement.
-3. **Multi-Tenant Memory Isolation:** In local Antigravity workspaces, strategic memory files were stored in project roots. When deploying multi-client instances, absolute isolation must be enforced via sandboxed directory paths and separate environment credentials.
+1. **First-Party Telemetry Mismatch:** In environments where Google Search Console and GA4 are authenticated to an alternate client domain, DataForSEO Live Advanced SERP is the primary authoritative search rank sensor. Full first-party GSC integration requires per-client OAuth renewal via `scripts/vivaak_oauth_flow.py`.
+2. **AI Citation Latency:** Google AI Overviews and Perplexity search do not re-index and re-synthesize web citations instantaneously. While Byte-0 SSR and schema updates occur in hours, off-page citation propagation requires 2 to 6 weeks.
+3. **Competing Domain Consolidation:** Legacy B2B directory portals (e.g. IndiaMART `sunteccutwire.com`) often possess aged domain equity that initially outranks new official domains (`.com`). Remediation requires explicit backlink insertion and entity disambiguation markup rather than algorithmic assumptions.
