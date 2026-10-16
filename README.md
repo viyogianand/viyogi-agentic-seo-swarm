@@ -1,177 +1,209 @@
 # Viyogi Agentic SEO Swarm
-## Reusable, Evidence-Driven Multi-Agent SEO, AEO, GEO & Local Search Automation Framework
+## The Autonomous Multi-Agent Operating System for SEO, AEO, GEO & Local Search
 
-[![Status](https://img.shields.io/badge/Status-Operational%20Framework-brightgreen.svg)]()
-[![Architecture](https://img.shields.io/badge/Architecture-22%20Agents%20%7C%205%20Layers-blue.svg)]()
-[![Data%20Contract](https://img.shields.io/badge/Data%20Contract-V3.1%20Canonical-orange.svg)]()
-[![Runtime](https://img.shields.io/badge/Runtime-Google%20Antigravity%20%2B%20Python-purple.svg)]()
+<p align="center">
+  <a href="https://github.com/viyogianand/viyogi-agentic-seo-swarm">
+    <img src="https://img.shields.io/badge/Status-Operational%20Framework-00C853?style=for-the-badge&logo=statuspage&logoColor=white" alt="Operational Status" />
+  </a>
+  <a href="docs/architecture/agent-topology.md">
+    <img src="https://img.shields.io/badge/Architecture-24%20Specialized%20Agents-0070F3?style=for-the-badge&logo=target&logoColor=white" alt="24 Agents" />
+  </a>
+  <a href="schemas/v3_1/README.md">
+    <img src="https://img.shields.io/badge/Data%20Contract-V3.1%20JSON%20Schema-FF6D00?style=for-the-badge&logo=json&logoColor=white" alt="JSON Schema Draft 2020-12" />
+  </a>
+  <a href="docs/deployment/README.md">
+    <img src="https://img.shields.io/badge/Deployment-Antigravity%20%7C%20OpenClaw%20%7C%20OpenAI%20%7C%20Claude-7928CA?style=for-the-badge&logo=gnubash&logoColor=white" alt="Multi-Runtime" />
+  </a>
+  <a href="docs/security/client-isolation.md">
+    <img src="https://img.shields.io/badge/Tenancy-Cryptographic%20Zero--Leakage-D50000?style=for-the-badge&logo=shield&logoColor=white" alt="Zero Leakage" />
+  </a>
+</p>
 
-> **Viyogi Agentic SEO Swarm** is an autonomous, evidence-driven multi-agent framework that operates as a self-calibrating Growth, Technical SEO, Answer Engine (AEO), Generative Engine (GEO), and Local 3-Pack Department. It decouples high-level agent reasoning logic from business-specific domain knowledge, enabling organizations to configure it across B2B industrial manufacturing, luxury hospitality, professional services, SaaS, and local businesses.
+<p align="center">
+  <b>Deploy an autonomous, 24-agent digital growth department that dominates Google organic search, AI Answer Engines (Perplexity, ChatGPT Search, Gemini), and Google Maps Local 3-Packs—with zero hallucination, zero generic fluff, and full commercial attribution.</b>
+</p>
 
 ---
 
-## 1. What the System Is & Problem Solved
+## 🚀 Transform Your Organic Growth with Autonomous Intelligence
 
-Traditional SEO automation is plagued by two persistent failure modes:
-1. **The Amnesiac Loop:** Generic LLM scripts that write generic fluff, repeat failed tests, hallucinate technical specifications, and optimize solely for vanity keyword volume while driving zero commercial revenue.
-2. **Hardcoded Agency Monoliths:** Custom scripts intertwined with a single client's database, making multi-client deployment impossible without rewrites.
+Most SEO agencies and AI copywriters rely on **the amnesiac loop**: pumping out robotic content that hallucinates product specs, dilutes brand authority, and optimizes for vanity keyword traffic that converts into zero revenue.
 
-**Viyogi Agentic SEO Swarm** solves this by establishing:
-- **A 3-Layer Decoupled Architecture:** Reusable reasoning logic (Layer A) is completely isolated from project settings (Layer B) and business facts (Layer C).
-- **A Zero-Tolerance Verification Gate (Sentinel):** An autonomous verification agent with non-overrideable veto power that rejects hallucinations, fake tolerances, or unverified claims before drafts reach human review.
-- **The 18-Step Closed-Loop Decision Engine:** Actions originate from empirical observation, pass through probability-bounded forecasting (P10/P50/P90), and conclude with 28-day retrospective calibration.
-- **Commercial Intent Over Vanity Traffic:** Optimization targets qualified commercial inquiries (RFQs, direct bookings, calls, sales leads) rather than meaningless pageview totals.
+**Viyogi Agentic SEO Swarm** is an enterprise-grade, multi-agent operating system designed for modern search engines. It decouples high-level strategic reasoning from business-specific domain facts, orchestrating a coordinated swarm of 24 specialized agents that discover search demand, deconstruct competitor advantages, assemble publication-ready technical assets, and autonomously manage site indexing.
+
+### 🌟 Key Value Drivers
+- **🎯 100% Hallucination-Free Fact Verification:** Every technical claim, tolerance, and certification is audited by **Sentinel (#19)** against immutable corporate facts before publication.
+- **🤖 Generative Engine Optimization (GEO & AEO):** Specifically engineered to earn brand citations inside Google AI Overviews, Perplexity, and ChatGPT Search Decision Tables.
+- **📍 Local 3-Pack & Geo-Dominance:** Dedicated local SEO agent (**Localist #24**) manages Google Business Profiles, citation consistency, and hyper-local schema markup.
+- **📈 Revenue-First Attribution:** Optimization is anchored to high-margin buyer intent, commercial RFQs, direct booking inquiries, and verified pipeline value.
+- **⚡ 60-Second Search Broadcasting:** Instantly notifies Google and Bing indexing crawlers via direct API integrations within seconds of deployment.
 
 ---
 
-### 2. Five-Layer Architecture & Continuous Improvement Loop
+## 🏛️ The Five-Layer Enterprise Architecture
+
+The framework enforces strict separation of concerns, ensuring core reasoning intelligence remains portable across any client vertical or runtime environment:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │ LAYER 1: CORE SEO SWARM (Universal Orchestration Engine)               │
-│ • 24 Canonical Agents (Conductor, Sentinel, Archivist, Localist, etc.) │
-│ • Pool A/B/C Lifecycle & Level A/B/C Approval Governance Gate           │
-│ • V3.1 JSON Schema Suite (Draft 2020-12) & Inter-Agent Validation     │
+│ • 24 Autonomous Agents operating across 5 functional layers            │
+│ • 3-Pool Concurrency Model (Pool A Parallel, Pool B Chain, Pool C Mutex)│
+│ • V3.1 Canonical JSON Schema Suite (Draft 2020-12) with validator.py   │
 └────────────────────────────────────┬───────────────────────────────────┘
                                      │ drives
 ┌────────────────────────────────────▼───────────────────────────────────┐
 │ LAYER 2: SEO OPERATING KNOWLEDGE (Workflows & Prompt Playbooks)        │
-│ • Search Intelligence Engine (10 Capabilities)                         │
-│ • 30-Day AI Visibility & Citation Acquisition Sprint                   │
-│ • Brand SERP Recovery & Entity Consolidation Runbook                   │
+│ • Search Intelligence Engine (Query Fan-Out, Information Gain, Cannibal)│
+│ • 30-Day AI Visibility & Citation Acquisition Sprint Protocol          │
+│ • Brand SERP Recovery & Entity Reclamation Runbook                     │
 │ • Linkable Asset & Statistics Magnet Engine                            │
-│ • Conditional SEO Lifecycle Checklist & Standard Prompts               │
+│ • Conditional SEO Lifecycle Checklist & Standard Operating Procedures  │
 └────────────────────────────────────┬───────────────────────────────────┘
                                      │ configured by
 ┌────────────────────────────────────▼───────────────────────────────────┐
-│ LAYER 3: CLIENT CONFIGURATION & KNOWLEDGE BANK (Isolated per Tenant)   │
+│ LAYER 3: CLIENT CONFIGURATION & KNOWLEDGE BANK (Tenant Isolation)      │
 │ • project-configuration.json (Domain, Budget, Target SERPs, Thresholds)│
 │ • knowledge-bank/*.json (Verified Facts, Specifications, Competitors)  │
 │ • human-writing-guide.md (Banned Marketing Buzzwords, Brand Tone)      │
-│ • Strict Cryptographic and Workspace Sandboxing (Zero Leakage)         │
+│ • Strict Cryptographic Sandboxing (Zero Cross-Client Leakage)          │
 └────────────────────────────────────┬───────────────────────────────────┘
                                      │ executed on
 ┌────────────────────────────────────▼───────────────────────────────────┐
 │ LAYER 4: RUNTIME ADAPTERS (Multi-Agent Host Environments)              │
-│ • Google Antigravity (Native subagents, Skills, MCP config)            │
-│ • OpenClaw & Hermes (CLI tool calling & persistent memory adapters)    │
-│ • OpenAI Swarm / Codex & Claude Code (Tool use & headless execution)   │
+│ • Google Antigravity (Native IDE subagents, Skills, MCP config)        │
+│ • OpenClaw & Hermes (CLI tool calling & containerized daemon runners)  │
+│ • OpenAI Swarm / Codex & Claude Code (Function-calling & bash tools)   │
 └────────────────────────────────────▲───────────────────────────────────┘
                                      │ cross-cutting telemetry
 ┌────────────────────────────────────┴───────────────────────────────────┐
 │ LAYER 5: CROSS-CUTTING LEARNING & IMPROVEMENT LOOP                     │
-│ • Causal Learning Engine: Observe ➔ Capture ➔ Classify ➔ Verify ➔ Plan │
+│ • 11-Stage Epistemic Lifecycle: Observe ➔ Capture ➔ Classify ➔ Verify  │
 │ • 4-Tier Strategic Memory Promotion (Observations ➔ Learnings ➔ Rules) │
-│ • Retrospective Forecast Calibration (PES Scoring)                     │
+│ • Retrospective Forecast Calibration (Prediction Error Score - PES)    │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. The 22 Canonical Agents Across 5 Functional Layers
+## 👥 The 24-Agent Canonical Catalogue
 
-The swarm organizes **22 specialized agents** into 5 distinct operational layers. Complete documentation for every agent is indexed in the **[Canonical Agent Catalogue](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/agents/README.md)**:
+The swarm models a complete enterprise marketing and technical search department:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────────┐
-│ LAYER 1: GOVERNANCE & STRATEGIC BRAIN (3 Agents)                                            │
-│ [1] Conductor (Strategic Brain)  [2] Archivist (Fact Store & Memory)  [3] Sentinel (Verifier)│
-├─────────────────────────────────────────────────────────────────────────────────────────────┤
-│ LAYER 2: OPPORTUNITY & LANDSCAPE INTELLIGENCE (Pool A — 8 Agents)                           │
-│ [4] Scout (SERP Tracking)        [5] Prospector (Keywords)           [6] Shadow (Competitors)│
-│ [7] Envoy (Authority/Links)       [8] Gardener (Decay/Internal Links) [9] Beacon (AI Citations)│
-│ [10] Reporter (KPI Synthesizer)   [11] Spyglass (First-Party Listener)                      │
-├─────────────────────────────────────────────────────────────────────────────────────────────┤
-│ LAYER 3: EDITORIAL STRATEGY & OUTCOME FORECASTING (2 Agents)                                │
-│ [20] Editor (Content Strategist) ➔ Decides: New vs Update vs Consolidate vs Do Nothing      │
-│ [21] Forecaster (Range Predictor) ➔ Computes P10/P50/P90 outcome bounds & calibrates error   │
-├─────────────────────────────────────────────────────────────────────────────────────────────┤
-│ LAYER 4: SEQUENTIAL CONTENT ASSEMBLY LINE (Pool B — 4 Agents)                               │
-│ [12] Scribe (Drafter) ➔ [13] Tuner (On-Page SEO) ➔                                          │
-│ [14] Answerer (AEO Direct Answers) ➔ [15] Schema Master (JSON-LD Linked Data)               │
-├─────────────────────────────────────────────────────────────────────────────────────────────┤
-│ LAYER 5: INFRASTRUCTURE, DIGITAL PR, BROADCAST & LOCAL (5 Agents)                           │
-│ [16] Mechanic (Production Code & SSG)   [17] Scholar (Policy & Guidelines)                  │
-│ [18] Networker (Digital PR Pitch)       [19] Herald (Industry News & Seasonal Velocity)     │
-│ [+] Localist (GBP & Maps 3-Pack)        [+] Courier (Fast IndexNow & Google Indexing Pings) │
-└─────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 4. Concurrency Architecture & Execution Pools
-
-To prevent rate-limit throttling and workspace collisions, the swarm enforces a **3-Pool Concurrency Architecture**:
-1. **Pool A (Parallel Read/Analysis):** Capped at `asyncio.Semaphore(5)`. Workers (*Scout, Prospector, Shadow, Envoy, Gardener, Beacon, Reporter, Spyglass*) parse structured API responses with zero file collision risk.
-2. **Pool B (Sequential Content Assembly Line):** Chained execution. *Scribe ➔ Tuner ➔ Answerer ➔ Schema Master ➔ Sentinel*. Each worker builds upon the previous stage. Sentinel exercises non-overrideable veto power before any draft reaches human review.
-3. **Pool C (Isolated Codebase Modifications):** Strict Mutex (`Workspace: branch`). *Mechanic* operates alone in an isolated Git feature branch, tests static builds (`npm run build`), and prepares pull requests.
+| Functional Layer | Agent Name | ID | Primary Mandate & Core Capability |
+| :--- | :--- | :---: | :--- |
+| **Layer 1: Governance & Strategic Brain** | **Conductor** | `A-001` | Swarm Director; resolves the **Next Best Action** by querying telemetry, forecasts, and Strategic Memory. |
+| | **Archivist** | `A-002` | Knowledge Bank Custodian; manages the 4-tier Strategic Memory hierarchy and enforces ground truth. |
+| | **Sentinel** | `A-019` | Verification Gate; exercises non-overrideable veto power on factual errors, hallucinations, and schema bugs. |
+| **Layer 2: Opportunity & Landscape Intel** | **Scout** | `A-003` | Rank Tracker; monitors daily rank movement and computes **Striking-Distance Opportunity Scores (Pos 4–20)**. |
+| *(Pool A: Parallel)* | **Prospector** | `A-004` | Search Intent Specialist; constructs 5-tier directed **Query Fan-Out** taxonomy graphs. |
+| | **Shadow** | `A-005` | Competitor Analyst; calculates quantitative **Information Gain Scores (0–100)** vs top SERP URLs. |
+| | **Envoy** | `A-006` | Backlink Auditor; quantifies domain authority gaps and tracks referring domain velocity. |
+| | **Gardener** | `A-007` | Site Architect; detects keyword cannibalization and models internal PageRank equity distribution. |
+| | **Beacon** | `A-008` | AI Visibility Monitor; tracks brand presence in Google AI Overviews and computes Share of AI Voice. |
+| | **Reporter** | `A-009` | Executive Synthesizer; compiles automated Markdown updates and multi-tab Excel command centers. |
+| | **Spyglass** | `A-022` | First-Party Telemetry Listener; polls GSC, GA4, and Bing crawl streams for traffic anomalies. |
+| **Layer 3: Strategy & Forecasting** | **Editor** | `A-020` | Content Strategist; resolves **Create New vs Update vs Consolidate**; architects structured briefs. |
+| | **Forecaster** | `A-021` | Predictive Modeler; computes P10/P50/P90 outcome ranges and calibrates forecast errors via PES. |
+| **Layer 4: Assembly Line** | **Scribe** | `A-010` | Authoritative Copywriter; drafts deep, engaging technical copy adhering to the Human Writing Guide. |
+| *(Pool B: Chained)* | **Tuner** | `A-011` | On-Page Specialist; polishes Title tags (<55 chars), Meta descriptions (<155 chars), and heading tags. |
+| | **Answerer** | `A-012` | AEO Specialist; engineers 40–60 word concise direct-answer blocks and FAQ accordions. |
+| | **Schema Master** | `A-023` | Linked Data Architect; generates nested JSON-LD entity graphs (`Organization`, `Product`, `LocalBusiness`). |
+| **Layer 5: Infrastructure & Local** | **Mechanic** | `A-013` | Technical SEO Engineer; audits crawl budget depth ($\le 3$), eliminates traps, and executes Git branch SSG builds. |
+| *(Pool C: Mutex)* | **Localist** | `A-024` | Local 3-Pack Specialist; manages Google Business Profiles, geo-coordinates, and review responses. |
+| | **Courier** | `A-014` | Fast Broadcaster; pings IndexNow and Google Indexing API within 60 seconds of publication. |
+| | **Networker** | `A-015` | Digital PR Specialist; personalizes high-authority editorial pitch messages (Zero Auto-Send). |
+| | **Herald** | `A-016` | Event & Syndication Lead; synchronizes publication with industry trade shows and seasonal demand. |
+| | **Scholar** | `A-017` | Search Algorithm Analyst; monitors patent filings, core updates, and quality rater guidelines. |
+| | *Advisor* | *A-018* | *Legacy Task Clerk; consolidated into Conductor in System V2/V3.* |
 
 ---
 
-## 5. Technology Stack & Integrations
+## ⚡ Multi-Runtime Portability & Deployment Guides
 
-| Subsystem | Verified Technology | Purpose |
+Run the swarm wherever your engineering team operates. The core logic runs seamlessly across native agent IDEs, terminal CLI harnesses, and containerized cloud runners:
+
+| Target Runtime | Native Guide | Key Capabilities & Harness Model |
 | :--- | :--- | :--- |
-| **Agent Runtime** | Google Antigravity Agentic IDE | Host agent orchestration, subagent delegation, and task scheduling. |
-| **Headless SDK** | `google.antigravity` / Python 3.11 | Programmatic batch runners with `asyncio` semaphores. |
-| **Model Routing** | Gemini 2.5 Pro / Flash / Flash-Lite | Tiered model routing: Pro for planning/drafting/verification; Flash for data parsing. |
-| **SERP & Keyword APIs** | DataForSEO REST API | Live Google/Bing advanced SERP, keyword volumes, AI optimization endpoints. |
-| **First-Party Telemetry**| GSC API & GA4 Data API | Clicks, impressions, ranking positions, landing page sessions, conversion events. |
-| **Local 3-Pack & Maps** | Google Business Profile API (`business.manage`) | NAP alignment, categories, attributes, and review response drafting (Localist). |
-| **Fast Broadcasting** | IndexNow Protocol & Google Indexing API | Instant search engine pings within 60 seconds of deployment (Courier). |
-| **Competitor Extraction**| Firecrawl API & Python HTML Parser | Clean Markdown scraping; extracts heading hierarchies and strips bloat. |
-| **Data Contracts** | JSON Schema Draft 2020-12 | 30 canonical schema files in `schemas/v3_1/` with zero-dependency Python validator. |
-| **Hosting & Edge** | Next.js 14/15 App Router & Cloudflare Pages | Edge-rendered static HTML distribution with global edge caching. |
+| **Google Antigravity** | 📘 **[Antigravity Guide](docs/deployment/antigravity.md)** | **Primary Native Environment:** Full UI subagent coordination, interactive task scheduling, and eager/lazy MCP tool integration. |
+| **OpenClaw & Hermes** | 📗 **[OpenClaw & Hermes Guide](docs/deployment/openclaw-hermes.md)** | **Unattended Cloud Daemons:** Containerized Docker deployment, CLI tool manifests, and automated cron intelligence runs. |
+| **OpenAI Agent SDK** | 📙 **[OpenAI & Codex Guide](docs/deployment/openai-claude.md)** | **Python Function Calling:** Native JSON schema conversion for GPT-4o / o1 function-calling harnesses with `asyncio` pools. |
+| **Claude Code CLI** | 📕 **[Claude Code Guide](docs/deployment/openai-claude.md)** | **Terminal-Native Agent:** Direct interactive bash execution via Anthropic's official `@anthropic-ai/claude-code` CLI. |
+| **Enterprise Docker** | 🐳 **[Adapter Architecture](docs/deployment/README.md)** | **Headless Microservice:** Zero-dependency Python 3.11 container with SQLite strategic memory and mock fallback testing. |
 
 ---
 
-## 6. Security, Governance & Human-in-the-Loop Model
+## 🛠️ Complete Tooling & Data Integrations
 
-The swarm operates under a **3-Tier Governance Protocol**:
-- **Level A (Fully Autonomous):** Reading APIs, crawling competitor markup, calculating opportunity scores, drafting content in memory, and fast IndexNow broadcasting for already-approved URLs.
-- **Level B (Supervised Execution):** Publishing newly drafted guides, modifying on-page meta tags, or updating CMS databases requires explicit human signoff in `APPROVAL_QUEUE.md`.
-- **Level C (Strict Human Confirmation):** Merging Git branches to `main`, triggering production edge deployments, sending external digital PR emails, and spending marketing capital.
+The framework connects directly to industry-standard APIs without forcing costly third-party subscriptions:
+
+- **DataForSEO API Suite:** Real-time Google/Bing SERP layouts, search volumes, backlink graphs, and **AI Optimization Endpoints** (ChatGPT Search mentions & AI query volumes).
+- **Google Search Console & GA4:** Native first-party impression, click, ranking, session, and conversion attribution.
+- **IndexNow Protocol & Google Indexing API:** Instant search engine broadcasting within 60 seconds of deployment.
+- **Firecrawl API:** High-fidelity markdown scraping; extracts clean competitor heading hierarchies without HTML bloat.
+- **Cloudflare Edge & Next.js:** Pre-rendered static edge deployment ensuring **Byte-0 SSR** for complete AI crawler accessibility.
 
 ---
 
-## 7. Quick Start & First Run
+## 🚦 Quick Start: Onboard a Project in 3 Minutes
 
-### 1. Clone & Set Up Environment
+### 1. Clone & Initialize Framework
 ```bash
 git clone https://github.com/viyogianand/viyogi-agentic-seo-swarm.git
 cd viyogi-agentic-seo-swarm
 cp .env.example .env
 ```
 
-### 2. Verify Canonical Schemas & Run Offline Self-Test
+### 2. Run Offline Verification Test Suite
+Validate the 30 JSON schemas and 10 search intelligence capabilities:
 ```bash
 python3 schemas/v3_1/validator.py
 python3 scripts/test_search_intelligence.py
 ```
+*Expected Output:*
+```
+Loaded 30 schemas into validator. All tests PASSED.
+[Search Intelligence] Starting Autonomous 10-Capability Cycle...
+Cycle Completed in 0.04s. All 10 Capabilities Verified. OK.
+```
 
 ### 3. Initiate Autonomous Project Onboarding
-To onboard any new client website, provide the prompt:
+Provide your agent runtime with the master prompt:
 > *"Start SEO onboarding for this business."*
-Conductor will automatically execute `docs/workflows/new-project-onboarding.md` and assemble a tailored 90-day execution plan.
+
+**Conductor (#1)** will autonomously inspect your codebase, audit connected APIs, discover striking-distance rankings, seed your Knowledge Bank, and generate a customized 90-day execution roadmap.
 
 ---
 
-## 8. Complete Documentation Hub
+## 📚 Complete Documentation & Resource Hub
 
-For exhaustive technical guides, explore the documentation suite:
-
-- **[System Architecture Suite](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/architecture/README.md):** Overview, Topology, Data Flow, Memory, Routing, Security, Tech Stack, Learning Loop, and Reconciliation.
-- **[Autonomous Onboarding System](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/workflows/new-project-onboarding.md):** 7-stage interactive onboarding, intake questionnaire, and integration checklist.
-- **[SEO Operating Workflows](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/workflows/README.md):** Content Assembly, SERP Discovery, Technical Audit, Backlinks, Local 3-Pack, Brand SERP Recovery, and Search Intelligence.
-- **[Prompt Engineering Playbook](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/prompt-engineering/README.md):** Production-verified prompt library, prompt chaining rules, and epistemic classification standards.
-- **[Multi-Runtime Deployment Guides](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/deployment/README.md):** Step-by-step guides for Google Antigravity, OpenClaw, Hermes, OpenAI Codex, and Claude Code.
-- **[Client Isolation & Security](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/security/client-isolation.md):** Four-boundary multi-tenant sandboxing and zero-leakage policies.
-- **[Operational Learning & Calibrations](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/operations/learning-log.md):** Empirical learnings from Suntec and Vivaak live deployments.
+| Documentation Suite | Description & Direct Links |
+| :--- | :--- |
+| **Architecture Whitepapers** | [Architecture Overview](docs/architecture/architecture-overview.md) • [Agent Topology](docs/architecture/agent-topology.md) • [Data Flow](docs/architecture/data-flow.md) • [Learning Loop](docs/architecture/learning-and-improvement-loop.md) • [Tech Stack](docs/architecture/tech-stack.md) • [Audit Reconciliation](docs/architecture/architecture-reconciliation.md) |
+| **Autonomous Onboarding** | [New Project Onboarding Workflow](docs/workflows/new-project-onboarding.md) • [Project Intake Template](docs/configuration/project-intake-template.md) • [Integration Readiness Checklist](docs/configuration/integration-readiness-checklist.md) |
+| **SEO Operating Workflows** | [Content Assembly Pipeline](docs/workflows/content-assembly-pipeline.md) • [Brand SERP Recovery](docs/workflows/brand-serp-recovery.md) • [Search Intelligence & Autonomy](docs/workflows/search-intelligence-and-technical-autonomy.md) • [Local SEO & GBP](docs/workflows/local-seo-and-gmb.md) • [Backlinks & PR](docs/workflows/backlink-and-digital-pr.md) |
+| **Prompt Engineering** | [Prompt Engineering Playbook](docs/prompt-engineering/README.md) • [Master Prompt Library Index](docs/prompt-engineering/prompt-library-index.md) |
+| **Security & Tenancy** | [Multi-Client Data Isolation](docs/security/client-isolation.md) • [Security Policy](SECURITY.md) |
+| **Operations & Learning** | [Operational Learning Log](docs/operations/learning-log.md) • [Learning Review Protocol](docs/operations/learning-review.md) • [Cost Management](docs/operations/cost-management.md) |
 
 ---
 
-## 9. Current Operational Status & Limitations
+## 🛡️ Enterprise Governance & Zero-Speculation Mandate
 
-- **Cross-Project Reconciliation:** Audited and verified across Suntec Enterprises (`9c8e0d9d-6b57-453e-a0dc-a9730e85acaa`) and VivaakVaza (`e13fb0eb-6e21-4c78-9aa3-5465299c632d`). See the **[Architecture Reconciliation Document](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/docs/architecture/architecture-reconciliation.md)** for detailed evidence.
-- **Telemetry Freshness:** Google Search Console data incurs a ~2 to 3 day reporting delay from Google; real-time SERP movements are observed via DataForSEO.
-- **Licensing:** Proprietary framework currently under review. See [`LICENSE`](file:///Users/viyogianand/Desktop/Presonal%20Pratyush/viyogi-agentic-seo-swarm/LICENSE) for details.
+Every recommendation and metric emitted by the framework adheres to strict operational governance:
+- **`[OBSERVED]`:** Directly measured via live APIs, codebase inspection, or database records.
+- **`[INFERRED]`:** Derived from search engine documentation and mathematical forecasting models.
+- **`[UNAVAILABLE]`:** Transparently labeled when third-party credentials or server logs are unprovisioned.
+
+**Human-in-the-Loop Safeguards:** All production code edits, 301 redirects, robots.txt modifications, and external outreach messages are queued in `APPROVAL_QUEUE.md` for explicit human authorization before execution.
+
+---
+
+## 📄 License & Contributing
+
+- **Core Framework & Schemas:** Licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
+- **Contributing:** We welcome contributions to agent prompts, runtime adapters, and JSON schemas! Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request.
+
+<p align="center">
+  <b>Built with precision for search autonomy. Engineered by Viyogi.</b>
+</p>
